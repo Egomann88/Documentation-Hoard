@@ -167,17 +167,19 @@
 (check-expect (list-or (lambda (n) (< n 5)) (list 7 8 9 10))  #f)
 
 ; 5.
-(: count-trues ((%a -> boolean) (list-of %a) -> (list-of %b)))
+(: count-trues ((%a -> boolean) (list-of %a) -> natural))
 
 (define count-trues
   (lambda (f list)
-    (list-fold empty
+    (list-fold 0
                (lambda (first rest)
-                 (...)
+                 (cond
+                   ((f first) (+ 1 rest))
+                   (else rest)))
                  list)))
 
-(check-expect (count-trues even? (list 1 2 3 4)) (list #f #t #f #t))
-(check-expect (count-trues even? (list 2 4 6 7)) (list #t #t #t #f))
+(check-expect (count-trues even? (list 1 2 3 4)) 2)
+(check-expect (count-trues even? (list 2 4 6 7)) 3)
 
 ; 6.
 (: contains? ((list-of %a) %a -> boolean))
