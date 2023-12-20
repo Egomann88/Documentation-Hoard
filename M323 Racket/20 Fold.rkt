@@ -1,6 +1,6 @@
 ;; Die ersten drei Zeilen dieser Datei wurden von DrRacket eingefügt. Sie enthalten Metadaten
 ;; über die Sprachebene dieser Datei in einer Form, die DrRacket verarbeiten kann.
-#reader(lib "vanilla-reader.rkt" "deinprogramm" "sdp")((modname 20_Fold) (read-case-sensitive #f) (teachpacks ((lib "image.rkt" "teachpack" "deinprogramm" "sdp"))) (deinprogramm-settings #(#f write repeating-decimal #f #t none explicit #f ((lib "image.rkt" "teachpack" "deinprogramm" "sdp")))))
+#reader(lib "vanilla-reader.rkt" "deinprogramm" "sdp")((modname |20 Fold|) (read-case-sensitive #f) (teachpacks ((lib "image.rkt" "teachpack" "deinprogramm" "sdp"))) (deinprogramm-settings #(#f write repeating-decimal #f #t none explicit #f ((lib "image.rkt" "teachpack" "deinprogramm" "sdp")))))
 ; ----- Funktionen auf Listen -----
 
 (define list-of-number (signature (list-of number)))
@@ -167,6 +167,19 @@
 (check-expect (list-or (lambda (n) (< n 5)) (list 7 8 9 10))  #f)
 
 ; 5.
+(: count-trues ((%a -> boolean) (list-of %a) -> (list-of %b)))
+
+(define count-trues
+  (lambda (f list)
+    (list-fold empty
+               (lambda (first rest)
+                 (...)
+                 list)))
+
+(check-expect (count-trues even? (list 1 2 3 4)) (list #f #t #f #t))
+(check-expect (count-trues even? (list 2 4 6 7)) (list #t #t #t #f))
+
+; 6.
 (: contains? ((list-of %a) %a -> boolean))
 
 (define contains?
@@ -180,7 +193,7 @@
 (check-expect (contains? (list 1 2 3 4 7 8) 3) #t)
 (check-expect (contains? (list 1 2 3 4 7 8) 5) #f)
 
-; 6.
+; 7.
 (: remove-duplicates ((list-of %a) -> (list-of %a)))
 
 (define remove-duplicates
