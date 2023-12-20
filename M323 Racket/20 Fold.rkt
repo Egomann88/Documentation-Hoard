@@ -204,8 +204,8 @@
     (list-fold empty
               (lambda (first rest)
                 (if (contains? rest first) ; rest mit list verleichen - nicht allgemein - sonst gibts immer true und gibt leere Liste zurück
-                    rest
-                    (cons first rest)))
+                    rest ; ein Element weitergehen (das duplikat auslassen)
+                    (cons first rest))) ; neue List ohne duplies erstellen
               list)))
 
 (check-expect (remove-duplicates (list 1 2 2 3)) (list 1 2 3))
