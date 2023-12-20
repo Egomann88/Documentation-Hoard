@@ -136,8 +136,8 @@
     (list-fold empty
               (lambda (first rest)
                 (if (f first)
-                    (cons first rest)
-                    rest))
+                    (cons first rest) ; erstelle neue Liste (gefiltert) und gibt diese in den rekursiven Aufruf
+                    rest)) ; rekursiver Aufruf mit nächsten Element
               list)))
 
 ; 3.
@@ -192,6 +192,7 @@
                    ((equal? first element) #t)
                    (else rest)))
                list)))
+
 (check-expect (contains? (list 1 2 3 4 7 8) 3) #t)
 (check-expect (contains? (list 1 2 3 4 7 8) 5) #f)
 
