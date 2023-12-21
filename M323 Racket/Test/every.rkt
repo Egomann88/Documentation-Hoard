@@ -13,6 +13,6 @@
 (define every?
   (lambda (f list)
     (fold #t
-               (lambda (first rest)
-                 (and (f first) rest))
-               list)))
+          (lambda (first rest)
+            (and (f first) rest))
+          list)))
