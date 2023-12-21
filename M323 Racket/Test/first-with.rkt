@@ -11,20 +11,9 @@
 ; Schreiben Sie hier die Funktion "first-with":
 (define first-with
   (lambda (f list)
-    (list-fold #f
-               (lambda (first rest)
-                (if (f first)
-                     first
-                     rest))
-               list)))
-
-; list-fold importieren, weil es bei mir in implementiert ist.
-(: list-fold (%b (%a %b -> %b) (list-of %a) -> %b))
-
-(define list-fold
-  (lambda (for-empty for-cons list) ; Die neuen Variablen müssen den Parameter hinzugefügt werden!
-    (cond
-      ((empty? list) for-empty) ; Die 0 oder 1 sind im empty-Zweig, daher for-empty!
-      ((cons? list)
-       (for-cons (first list) ; Die * oder + sind im cons-Zweig, daher for-cons!
-                 (list-fold for-empty for-cons (rest list))))))) ; Ebenso gehören Sie in den rekursiven Aufruf.
+    (fold #f
+          (lambda (first rest)
+            (if (f first)
+              first
+              rest))
+          list)))
