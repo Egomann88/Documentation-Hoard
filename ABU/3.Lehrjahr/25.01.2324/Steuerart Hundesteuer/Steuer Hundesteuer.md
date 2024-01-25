@@ -28,6 +28,9 @@ Die Hundesteuer ist eine **Besitz und Aufwandsteuer** was heisst, dass nur Hunde
 
 Die Hundesteuer ist eine indirekte Steuer, auch Aufwandsteuer genannt, weil sie den Besitz von Hunden ("Gegenständen") besteuert, auch wenn die Steuertarife nicht einheitlich sind. [Referenz: Buch Gesellschaft](#)
 
+![Indirekte Steuer Grafik](../assets/steuernVomKanton.png)  
+_Quelle: Input des Steuerexperten_
+
 ### Wie hoch ist sie?
 
 Die Höhe der Hundegebühr bewegt sich im Bereich von 50 Franken bis hin zu 200 Franken.
@@ -50,7 +53,7 @@ Das hat vor allem den Grund, dass die Anzahl der Hunde beschränkt werden soll.
 ### Wie viele sind betroffen
 
 Die Hundebesitzer sind in den Jahren 2020 - 2021 enorm angestiegen. Liegt das an der Corona Pandemie? Haben in der Isolation viele sich einen Hund zugelegt?
-![Anz. Hundebeseitzer Statistik](image.png)
+![Anz. Hundebeseitzer Statistik](../assets/image.png)
 
 ## Wer erhebt die Steuer?
 
