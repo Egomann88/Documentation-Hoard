@@ -1,0 +1,31 @@
+1. Berechnung von mean.
+	1. Mit mehreren gleichen Zahlen.
+		Testdaten: 1, 1, 1
+		Erwartetes Ergebnis: 1
+		Tatsächliches Ergebnis: 1
+	2. Mit unterschiedlichen Zahlen.
+		Testdaten: 23 ,25, 23, 1354, 1, -142
+		Erwartetes Ergebnis: 214
+		Tatsächliches Ergebnis: 214
+2. Berechnung von median.
+	1. Mit einer geraden Anzahl von Zahlen.
+		Testdaten: 23 ,25, 29, 1354, 1, -142
+		Erwartetes Ergebnis: 24
+		Tatsächliches Ergebnis: 24
+	2. Mit einer ungeraden Anzahl von Zahlen.
+		Testdaten: 23 ,25, 23, 1354, 1
+		Erwartetes Ergebnis: 23
+		Tatsächliches Ergebnis: 23
+3. Berechnung von mode.
+	1. Mit einem eindeutigen Ergebnis (eine Zahl kommt am häufigsten vor).
+		Testdaten: 23 ,25, 23, 1354, 1, -142
+		Erwartetes Ergebnis: 23
+		Tatsächliches Ergebnis: 23
+	2. Mit einem mehrdeutigen Ergebnis (mehrere Zahlen kommen am häufigsten vor).
+		Testdaten: 23 ,25, 23, 1354, 1, -142, -142
+		Erwartetes Ergebnis:
+			23
+			-142
+		Tatsächliches Ergebnis:
+			23
+			-142

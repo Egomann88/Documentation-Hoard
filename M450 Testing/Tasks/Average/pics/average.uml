@@ -1,0 +1,50 @@
+@startuml
+
+skinparam monochrome true
+skinparam defaultFontName "Fantasque Sans Mono"
+
+package "Average.Average" {
+    class FileAccess {
+        {static}{method} +ReadNumbers(path:string):List<int>
+    }
+
+    class Average {
+        {static}{method} +ComputeMeanOfFile(path:string):double
+        {static}{method} +ComputeMedianOfFile(path:string):double
+        {static}{method} +ComputeModeOfFile(path:string):List<int>
+    }
+
+    class Statistics {
+        {static}{method} +Mean(path:List<int>):double
+        {static}{method} +Median(path:List<int>):double
+        {static}{method} +Mode(path:List<int>):List<int>
+    }
+
+    Average --> FileAccess
+    Average --> Statistics
+}
+
+package "Average.Demo" {
+    class Program {
+        {static}{method} +Main(args:string[]):void
+    }
+}
+
+Average.Demo.Program --> Average.Average.Average
+
+package "Average.Test" {
+    class FileAccessTest { }
+    note top: "to be defined"
+    
+    class AverageTest { }
+    note top: "to be defined"
+
+    class StatisticsTest { }
+    note top: "to be defined"
+}
+
+Average.Test.FileAccessTest --> Average.Average.FileAccess
+Average.Test.AverageTest --> Average.Average.Average
+Average.Test.StatisticsTest --> Average.Average.Statistics
+
+@enduml
