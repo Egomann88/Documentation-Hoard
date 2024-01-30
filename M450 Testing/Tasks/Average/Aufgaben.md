@@ -1,4 +1,4 @@
-## Teststufen & -Arten
+# Teststufen & -Arten
 
 Aufgabe "Average", Modul 450
 
