@@ -11,7 +11,7 @@
 - [Block 2](../Theory/B2.md) (Ela): Testkonzept/Testumfeld
 - [Block 3](../Theory/B3.md) (Ela): Prüfung
 - [Block 5](../Theory/B5.md) (Bur): Teststufen & -Arten
-- [Block 6](../Theory/B6.md) (Bur): Systemtests (Übung)
+- [Block 6](../Theory/B6.md) (Bur): Systemtests Übung (Optional)
 - [Block 7](../Theory/B7.md) (Bur): Test Doubles
 - [Block 8](../Theory/B8.md) (Bur): Separation of Concerns
 - [Block 9](../Theory/B9.md) (Bur): Prüfung
