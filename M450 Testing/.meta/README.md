@@ -9,16 +9,14 @@
 
 - [Block 1](../Theory/B1.md) (Ela): Testkonzept
 - [Block 2](../Theory/B2.md) (Ela): Testkonzept/Testumfeld
-- [Block 3](../Theory/B3.md) (Ela): Prüfung
-- [Block 5](../Theory/B5.md) (Bur): Teststufen & -Arten
-- [Block 6](../Theory/B6.md) (Bur): Systemtests Übung _(Optional)_
-- [Block 7](../Theory/B7.md) (Bur): Test Doubles
-- [Block 8](../Theory/B8.md) (Bur): Separation of Concerns
-- [Block 9](../Theory/B9.md) (Bur): Prüfung
-- [Block 11](../Theory/B11.md) (Ela): Testfälle definieren
-- [Block 13](../Theory/B13.md) (Ela): Testfälle implementieren, ausführen, dokumentieren
-- [Block 15](../Theory/B15.md) (Bur): Test-Driven Development
-- [Block 16](../Theory/B16.md) (Bur): Debugging
-- [Block 17](../Theory/B17.md) (Bur): Debugging & Prüfung
-- [Block 18](../Theory/B18.md) (Bur): Schnittstellentest
-- [Block 19](../Theory/B19.md) (Bur): Schnittstellentest & Abschlussquiz
+- [Block 3](../Theory/B3.md) (Ela): **Prüfung**
+- [Block 4](../Theory/B4.md) (Bur): Teststufen & -Arten
+- [Block 5](../Theory/B5.md) (Bur): Test Doubles
+- [Block 6](../Theory/B6.md) (Bur): Separation of Concerns
+- [Block 7](../Theory/B7.md) (Bur): **Prüfung**
+- [Block 8](../Theory/B8.md) (Ela): Testprotokoll
+- [Block 9](../Theory/B9.md) (Ela): Automatisierte Tests
+- [Block 10](../Theory/B10.md) (Bur): Test-Driven Development
+- [Block 11](../Theory/B11.md) (Bur): Debugging
+- [Block 12](../Theory/B12.md) (Bur): **Prüfung**
+- Modulabschluss
