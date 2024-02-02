@@ -42,12 +42,15 @@ public class Board
 
     public int MakeMove(char player, int column)
     {
-        for (var r = fields.Length - 1; r >= 0; r--)
+        if (ColIsValid(column))
         {
-            if (fields[r][column] == EMPTY)
+            for (var r = fields.Length - 1; r >= 0; r--)
             {
-                fields[r][column] = player;
-                return r;
+                if (fields[r][column] == EMPTY)
+                {
+                    fields[r][column] = player;
+                    return r;
+                }
             }
         }
         return -1;
@@ -55,20 +58,23 @@ public class Board
 
     public char Winner(char player, int row, int col)
     {
-        var horizontal = HorizontalWinner(player, row);
-        if (horizontal != EMPTY)
+        if (ColIsValid(col) && RowIsValid(row))
         {
-            return horizontal;
-        }
-        var vertical = VerticalWinner(player, col);
-        if (vertical != EMPTY)
-        {
-            return vertical;
-        }
-        var diagonal = DiagonalWinner(player, row, col);
-        if (diagonal != EMPTY)
-        {
-            return diagonal;
+            var horizontal = HorizontalWinner(player, row);
+            if (horizontal != EMPTY)
+            {
+                return horizontal;
+            }
+            var vertical = VerticalWinner(player, col);
+            if (vertical != EMPTY)
+            {
+                return vertical;
+            }
+            var diagonal = DiagonalWinner(player, row, col);
+            if (diagonal != EMPTY)
+            {
+                return diagonal;
+            }
         }
         return EMPTY;
     }
@@ -131,15 +137,13 @@ public class Board
 
     private char[][] GetDiagonals(int r, int c)
     {
-        // Woe to thee, who entered here, for you dug too deep and unearthed daemons of the otherworld!
-        // https://youtu.be/TDIr9on8Rhw?t=18 https://youtu.be/Mue6Vc_T9Ds https://youtu.be/1T14eOUf-28?t=7
         var raising = new List<char>();
         var falling = new List<char>();
         for (int i = r, j = c; i >= 0 && j < COLS; i--, j++)
         {
             raising.Add(fields[i][j]);
         }
-        for (int i = r, j = c; i < ROWS && j >= 0; i++, j--)
+        for (int i = r + 1, j = c - 1; i < ROWS && j >= 0; i++, j--)
         {
             raising.Add(fields[i][j]);
         }
@@ -147,10 +151,20 @@ public class Board
         {
             falling.Add(fields[i][j]);
         }
-        for (int i = r, j = c; i >= 0 && j >= 0; i--, j--)
+        for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; i--, j--)
         {
             falling.Add(fields[i][j]);
         }
         return new char[][] { raising.ToArray(), falling.ToArray() };
+    }
+
+    private static bool ColIsValid(int column)
+    {
+        return column >= 0 && column < COLS;
+    }
+
+    private static bool RowIsValid(int row)
+    {
+        return row >= 1 && row < ROWS;
     }
 }
