@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectFour", "ConnectFour\ConnectFour.csproj", "{C5483602-C586-4011-B59B-91AE3DAF80AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectFour.Demo", "ConnectFour.Demo\ConnectFour.Demo.csproj", "{D82651CF-CFE6-4AD3-9EFF-9428BA6E9928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectFour.Test", "ConnectFour.Test\ConnectFour.Test.csproj", "{E96E4685-5BA7-4F15-9920-2FAC0D7A5AC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5483602-C586-4011-B59B-91AE3DAF80AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5483602-C586-4011-B59B-91AE3DAF80AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5483602-C586-4011-B59B-91AE3DAF80AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5483602-C586-4011-B59B-91AE3DAF80AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82651CF-CFE6-4AD3-9EFF-9428BA6E9928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82651CF-CFE6-4AD3-9EFF-9428BA6E9928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82651CF-CFE6-4AD3-9EFF-9428BA6E9928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82651CF-CFE6-4AD3-9EFF-9428BA6E9928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96E4685-5BA7-4F15-9920-2FAC0D7A5AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96E4685-5BA7-4F15-9920-2FAC0D7A5AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96E4685-5BA7-4F15-9920-2FAC0D7A5AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96E4685-5BA7-4F15-9920-2FAC0D7A5AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
