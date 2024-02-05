@@ -5,8 +5,8 @@
 - [Block 1](./Theory/B1.md) deklaratives Programmierparadigma und Einführung in Racket
 - [Block 2](./Theory/B2.md) Funktional programmieren in Racket
 - [Block 3](./Theory/B3.md) Signaturen und Verzweigungen
-- [Block 4](./Theory/B4.md) Gemischte Daten und Records
-- [Block 5](./Theory/B5.md) Vertiefung von gemischten Daten und Records
+- [Block 4](./Theory/B4.md) Zusammengesetzte Daten und Records
+- [Block 5](./Theory/B5.md) Vertiefung von Zusammengesetzte Daten und Records
 - [Block 6](./Theory/B6.md) **Prüfung** und _theoretischer Modulabschluss_
 - [Block 7](./Theory/B7.md) Listen und Rekursion
 - [Block 8](./Theory/B8.md) Intensive Rekursion
