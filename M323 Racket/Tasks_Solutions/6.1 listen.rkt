@@ -51,7 +51,7 @@
 
 ; Produkt der Elemente einer Liste von Zahlen berechnen
 (: list-product (list-of-numbers -> number))
-3
+
 (check-expect (list-product list1) 42)
 (check-expect (list-product list3) 6)
 (check-expect (list-product list4) 210)
