@@ -165,3 +165,54 @@ Die Datendefinition ist eine Art von Enumeration und Signierung. Sie wird benutz
 ```
 
 Dieses Beispiel erstellt die Datendefinition `pet` und gibt an, dass Pet nur `"dog"`, `"cat"` oder `"snake"` sein kann. In das `enum` können beliebig viele Werte und von beliebigen Typen eingetragen werden.
+
+## Abstraktion
+
+Abstraktion ist ein anderer Begriff für verallgemeinern oder reduzieren. Damit ist gemeint, dass Funktionen oder Klassen so geschrieben werden, dass sie möglichst allgemein und flexibel sind. Das Ziel ist, dass sie in möglichst vielen Situationen benutzt werden können. Wenn man davon spricht eine Funktion zu abstrahieren, dann meint man, dass diese verallgemeinert werden soll.
+
+z.B. Eine Liste kann nur Zahlen haben. Wenn man die Funktion abstrahiert, dann kann die Liste auch Strings oder andere Objekte haben.
+
+Abstraktion kann vieles bedeuten, grundlegend ist es, ein offenes Konzept. Es reicht schon, wenn man nur den Namen einer Datei zu ändern, um sie zu abstrahieren.
+
+-> Tisch - Abstrahieren zu > Möbel
+
+### Abstraktion vs Funktion
+
+Der Hauptunterschied ist, dass eine Abstraktion eine verallgemeinerte Funktion mit einem offen Rahmen ist. Die Funktion hat eine konkrete Aufgabe und Abfolge von Schritten.
+
+Das Hier wäre ein etwas längeres Beispiel, das die Abstraktion und Funktion erklärt:  
+Das Beispiel ist zwar in JavaScript, aber es ist ein gutes Beispiel, um den Unterschied zu zeigen.
+
+```javascript
+/* Nichts ist abstrahiert */
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+
+  document.getElementById("modal-title").innerText = "Das ist der Modal-Titel";
+  document.getElementById("modal-content").innerText = "Modal-Content.";
+
+  document.getElementById("modal-close").addEventListener("click", closeModal);
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+/* Hier wird abstrahiert */
+_openModal("Das ist der Modal-Titel", "Modal-Content.", closeModal);
+
+function _openModal(title, content, onClose) {
+  document.getElementById("myModal").style.display = "block";
+  setModalContent(title, content, onClose);
+}
+
+function setModalContent(title, content, onClose) {
+  document.getElementById("modal-title").innerText = title;
+  document.getElementById("modal-content").innerText = content;
+  document.getElementById("modal-close").addEventListener("click", onClose);
+}
+```
+
+Die Funktion `openModal` öffnet ein Modal und setzt den Titel und den Inhalt. Man kann die Funktion nicht weiter verwenden, weil sie festgeschrieben ist.
+
+Das untere Beispiel wird mit den Werten, welche angegeben werden, aufgerufen. Die Funktion `setModalContent` wird genutzt, als das Modal sich live aktuallisieren soll, ohne es neu zu öffnen. Speziell ist, dass die onClose-Funktion als Parameter übergeben wird, den es kann immer den Fall geben, dass die Funktion einen extra Schritt machen soll, bevor das Modal geschlossen wird.
