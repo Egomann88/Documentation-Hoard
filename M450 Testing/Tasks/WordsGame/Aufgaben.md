@@ -25,8 +25,6 @@ Löse die untenstehenden Aufgaben. Halte dich dabei an das Vorgehen von Test-Dri
 2.  Schreibe nur so viel Testcode, bis der Test scheitert.
 3.  Schreibe nur so viel Produktivcode, bis der Test durchläuft.
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
 ## 2. Aufgabe 1 (vorgegeben): Wort durcheinanderbringen
 
 Die Klasse Utils im WordsGame-Projekt verfügt über eine statische Methode namens `Scramble`, welche einen String erwartet und einen anderen String zurückgibt. Die Methode soll den String durcheinanderbringen.
