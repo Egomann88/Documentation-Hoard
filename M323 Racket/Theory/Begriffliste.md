@@ -216,3 +216,35 @@ function setModalContent(title, content, onClose) {
 Die Funktion `openModal` öffnet ein Modal und setzt den Titel und den Inhalt. Man kann die Funktion nicht weiter verwenden, weil sie festgeschrieben ist.
 
 Das untere Beispiel wird mit den Werten, welche angegeben werden, aufgerufen. Die Funktion `setModalContent` wird genutzt, als das Modal sich live aktuallisieren soll, ohne es neu zu öffnen. Speziell ist, dass die onClose-Funktion als Parameter übergeben wird, den es kann immer den Fall geben, dass die Funktion einen extra Schritt machen soll, bevor das Modal geschlossen wird.
+
+### Generischer Typ
+
+Ein generischer Typ ist ein Platzhalter, der es ermöglicht, denselben Code für verschiedene Datentypen zu verwenden, ohne ihn für jeden einzelnen Datentyp neu schreiben zu müssen. Das ist eine Basis vom Programmieren und wird von allen Programmiersprachen anders importiert.
+
+In Racket wird es mit `%` eingeleitet und ein paar Funktionen welchen den Typ zuweisen. Aus den Blöcken hatten wir ein Beispiel, wie man generische Listen erstellt:
+
+```racket
+(define list-of
+  (lambda (element)
+    (signature
+     (mixed empty-list
+            (cons-list-of element)))))
+
+(define-record (cons-list-of element)
+  cons
+  cons?
+  (first element)
+  (rest  (list-of element)))
+
+(: cons (%element (list-of %element) -> (cons-list-of %element)))
+(: first ((cons-list-of %element) -> %element))
+(: rest ((cons-list-of %element) -> (list-of %element)))
+```
+
+C# stellt generische Typen mit `T` dar. Das `T` steht für `Type` und stellt den ganzen Prozess einfacher dar.
+
+```csharp
+public static List<T> ListOf<T>(T element) {
+    return new List<T> { element };
+}
+```
