@@ -16,3 +16,5 @@
 - [Block 12](./Theory/B12.md) Fold und Map
 - [Block 13](./Theory/B13.md) **Prüfung**
 - Modulabschluss
+
+Hinweis: Die Tasks haben so sprunghafte Nummern, weil es die Nummern von den Kapiteln aus dem originalen [Skript](Skript.pdf) sind.
