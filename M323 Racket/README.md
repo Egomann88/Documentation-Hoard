@@ -8,13 +8,11 @@
 - [Block 4](./Theory/B4.md) Zusammengesetzte Daten und Records
 - [Block 5](./Theory/B5.md) **Prüfung** und _theoretischer Modulabschluss_
 - [Block 6](./Theory/B6.md) Listen und Rekursion
-- [Block 7](./Theory/B7.md) Signaturvariabeln
-- [Block 8](./Theory/B8.md) carte blanche
-- [Block 9](./Theory/B9.md) Listen abstrahieren und Level Up
-- [Block 10](./Theory/B10.md) Systematische Abstraktion
-- [Block 11](./Theory/B11.md) High Order Functions
-- [Block 12](./Theory/B12.md) Fold und Map
-- [Block 13](./Theory/B13.md) **Prüfung**
+- [Block 7](./Theory/B7.md) Signaturvariabeln, Listen abstrahieren und Level Up
+- [Block 8](./Theory/B8.md) High Order Functions
+- [Block 9](./Theory/B9.md) Fold
+- [Block 10](./Theory/B10.md) _carte blanche_
+- [Block 11](./Theory/B11.md) **Prüfung**
 - Modulabschluss
 
 Hinweis: Die Tasks haben so sprunghafte Nummern, weil es die Nummern von den Kapiteln aus dem originalen [Skript](Skript.pdf) sind.
