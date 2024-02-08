@@ -108,7 +108,7 @@ Steuern varrieren je nach Gemeinde
 
 - 1.6 Steuerfuss -> Vorgabe vom Bund. Steuern varrieren vom Bund. Tiefe Steuern wollen Leute anlocken, dann wollen alle dort hin und die Mieten steigen und machen mehr gewinn.
 - 1.4 Kirchensteuerfuss
-- Gemeindesteuerfuss ist varriabel und hängt von Kanton ab.
+- Gemeindesteuerfuss ist variabel und hängt von Kanton ab.
 
 | Gemeinde  | Steuerfuss | Steuerrechnung |
 | --------- | ---------- | -------------- |
