@@ -36,7 +36,7 @@ Für die folgenden Aufgaben verwenden wir diesen vereinfachten Record für Liste
            r))))))
 ```
 
-Die Definitionen von `f` und `r` verbessern die Lesbarkeit der Funktion, sind aber nicht zwingend notwendig. Definitionen innerhalb von Funktionen sind lokal und beeinflussen den äußeren Bereich nicht.
+Die Definitionen von `f` und `r` verbessern die Lesbarkeit der Funktion, sind aber nicht zwingend notwendig. Definitionen innerhalb von Funktionen sind lokal und beeinflussen den äusseren Bereich nicht.
 
 Tipp: Die Funktion `even?` prüft, ob eine Zahl gerade ist.
 
