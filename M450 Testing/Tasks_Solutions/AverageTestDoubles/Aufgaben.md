@@ -16,7 +16,7 @@ _Abbildung 1: Entkopplung von `Average` und `FileAccess` über das (noch zu bene
 1. Denk dir einen passenden Namen für das Interface `ToBeNamed` aus. Tipp: Die Schnittstelle macht nichts anderes als eine Reihe von Zahlen zu liefern.
 2. Erstelle das Interface im `Average`-Projekt.
 3. Passe die Deklaration der Klasse `FileAccess` so an, dass sie das neue Interface implementiert.
-4. Passe die Klasse `Average` so an, dass du keine Referenzen mehr auf `FileAccess` hast, sondern nur noch auf das neue Interface. (Funktioniert das Demoprogramm bzw. die Klasse Program anschließend noch? Teste das!) Damit ist die Abhängigkeit `FileAccess` von der Klasse `Average` entkoppelt. Die Klasse Average kann nun mit einem Test Double, welches den Dateizugriff simuliert, als Unittest getestet werden.
+4. Passe die Klasse `Average` so an, dass du keine Referenzen mehr auf `FileAccess` hast, sondern nur noch auf das neue Interface. (Funktioniert das Demoprogramm bzw. die Klasse Program anschliessend noch? Teste das!) Damit ist die Abhängigkeit `FileAccess` von der Klasse `Average` entkoppelt. Die Klasse Average kann nun mit einem Test Double, welches den Dateizugriff simuliert, als Unittest getestet werden.
 
 ## 2. Unittests mit Test Doubles
 
@@ -32,30 +32,30 @@ In den folgenden Aufgaben sollen entsprechende Unittests mit Test Doubles entwic
 ### 2.1 Fake
 
 Entwickle einen Fake, der nicht wie `FileAccess` auf das Dateisystem zugreift, sondern in einem _Dictionary_ Pseudo-Dateipfade zu einer Zahlenreihe zuordnet, beispielsweise so:
-| Pfad (Key)                   | Zahlen (Value)         |
+| Pfad (Key) | Zahlen (Value) |
 |------------------------------|------------------------|
-| "/path/to/an/empty/file"     | []                     |
-| "/path/to/some/other/file"   | [1, 2, 3, 4, 5]        |
-| "C:\test-data\third-file.txt"| [7, 34, 2]             |
+| "/path/to/an/empty/file" | [] |
+| "/path/to/some/other/file" | [1, 2, 3, 4, 5] |
+| "C:\test-data\third-file.txt"| [7, 34, 2] |
 
 Es soll möglich sein, dem Fake-Objekt neue “Dateien” hinzuzufügen. (Die Testdaten können so im _Arrange_-Teil des Unittests definiert und hinzugefügt werden.)
 
-Überlege dir, in welches Projekt diese Klasse gehört: `Average` oder `Average.Test`? Schreibe anschließend mindestens einen Unittest mit dieser Fake-Implementierung.
+Überlege dir, in welches Projekt diese Klasse gehört: `Average` oder `Average.Test`? Schreibe anschliessend mindestens einen Unittest mit dieser Fake-Implementierung.
 
 ### 2.2 Stub
 
 Entwickle einen _Stub_, der immer die gleichen hart-kodierten Werte zurückliefert. Entwickle einen weiteren Stub, welcher per Konstruktor eine Liste von Werten entgegennimmt, die beim Aufruf zurückgeliefert werden.
 
-Schreibe anschließend zwei Testfälle für die gleiche Methode mit den gleichen Zahlen. Verwende für die beiden Testfälle je einen anderen Stub. Welche der beiden Implementierungen macht den Test besser lesbar? Ist der zweite, flexiblere Stub wirklich noch ein Stub, oder schon ein Fake?
+Schreibe anschliessend zwei Testfälle für die gleiche Methode mit den gleichen Zahlen. Verwende für die beiden Testfälle je einen anderen Stub. Welche der beiden Implementierungen macht den Test besser lesbar? Ist der zweite, flexiblere Stub wirklich noch ein Stub, oder schon ein Fake?
 
 ### 2.3 Mock
 
 Entwickle einen _Mock_, der wie der Stub in der vorherigen Aufgabe immer die gleichen Werte zurückliefert. Der Mock soll über einen internen Zähler verfügen, der bei null startet, und bei jedem Aufruf um eins erhöht wird.
 
-Schreibe anschließend einen Testfall, der diese Mock-Implementierung verwendet. Teste dabei auch per Assertion auf Basis des Zählers, ob der Mock tatsächlich aufgerufen worden ist.
+Schreibe anschliessend einen Testfall, der diese Mock-Implementierung verwendet. Teste dabei auch per Assertion auf Basis des Zählers, ob der Mock tatsächlich aufgerufen worden ist.
 
 ### 2.4 Spy
 
-Schreibe einen _Spy_, der einen Wrapper um die Klasse `FileAccess` herum bildet. Da hier die originale Implementierung zum Einsatz kommt, ist das Aufsetzen einer Testumgebung (Zahlen in einer temporären Datei) wieder nötig. Der Spy soll sich mittels Zähler merken, wie oft `FileAccess.ReadNumbers()` aufgerufen worden ist. Außerdem sollen die zurückgelieferten Werte in einer Liste protokolliert werden.
+Schreibe einen _Spy_, der einen Wrapper um die Klasse `FileAccess` herum bildet. Da hier die originale Implementierung zum Einsatz kommt, ist das Aufsetzen einer Testumgebung (Zahlen in einer temporären Datei) wieder nötig. Der Spy soll sich mittels Zähler merken, wie oft `FileAccess.ReadNumbers()` aufgerufen worden ist. Ausserdem sollen die zurückgelieferten Werte in einer Liste protokolliert werden.
 
-Schreibe anschließend einen Testfall, der diesen Spy verwendet. Teste dabei auch per Assertion, ob erstens `FileAccess.ReadNumbers()` genau einmal aufgerufen worden ist, und zweitens ob die in der Datei definierten Zahlen als Rückgabewert protokolliert worden sind.
+Schreibe anschliessend einen Testfall, der diesen Spy verwendet. Teste dabei auch per Assertion, ob erstens `FileAccess.ReadNumbers()` genau einmal aufgerufen worden ist, und zweitens ob die in der Datei definierten Zahlen als Rückgabewert protokolliert worden sind.

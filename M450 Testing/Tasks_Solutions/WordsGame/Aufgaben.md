@@ -4,7 +4,7 @@ Aufgabe "Test-Driven Development", Modul 450
 
 Die folgenden Aufgaben beziehen sich auf die Beispiele **WordsGame** (die eigentlich Logik), **WordsGame.Demo** (das interaktive Demoprogramm für die Spiellogik) und **WordsGame.Test** (das xUnit-Test-Projekt, welches noch keine Tests enthält).
 
-Das Spiel funktioniert folgendermaßen:
+Das Spiel funktioniert folgendermassen:
 
 1. Es wird eine Reihe von Wörtern (Substantive) mit sechs bis acht Buchstaben in einer Textdatei zur Verfügung gestellt (`words.tx`).
 2. Beim Starten des Spiels wird eines dieser Wörter per Zufallsverfahren ausgewählt.
@@ -15,7 +15,7 @@ Das Spiel funktioniert folgendermaßen:
    - Errät der Spieler das richtige Wort, erhält er pro Buchstabe einen Punkt.
    - Gibt der Spieler ein anderes Wort ein, erhält er keine Punkte.
 
-Dein Auftrag ist es, die Spiellogik gemäß dem Vorgehen des Test-Driven Developments (TDD) fertig zu entwickeln. Zur einfacheren Vergleichbarkeit werden die Wörter jeweils in Großbuchstaben umgewandelt. (Würde nur der Anfangsbuchstaben großgeschrieben, würde das Spiel dadurch zu einfach werden.)
+Dein Auftrag ist es, die Spiellogik gemäss dem Vorgehen des Test-Driven Developments (TDD) fertig zu entwickeln. Zur einfacheren Vergleichbarkeit werden die Wörter jeweils in Grossbuchstaben umgewandelt. (Würde nur der Anfangsbuchstaben grossgeschrieben, würde das Spiel dadurch zu einfach werden.)
 
 ## 1. Anweisungen
 
@@ -58,11 +58,11 @@ Die Klasse `WordsGame` implementiert das Interface `IWordsGame`, ist aber noch n
 3. Werden die Methoden `Start` und `Grade` mit dem gleichen String aufgerufen, soll letztere die Anzahl Zeichen dieses Strings als Punktezahl zurückgeben.
 4. Unterscheiden sich die Strings hingegen, erhält der Spieler null Punkte.
 
-Teste anschließend das Spiel interaktiv (siehe `README.md` im Repository).
+Teste anschliessend das Spiel interaktiv (siehe `README.md` im Repository).
 
 ## 4. Aufgabe 3 (frei): Bewertung erweitern
 
-Schreibe eine alternative Implementierung, welche wiederum IWordsGame implementiert. Die Punktezahl soll gemäß Scrabble-Regeln vergeben werden:
+Schreibe eine alternative Implementierung, welche wiederum IWordsGame implementiert. Die Punktezahl soll gemäss Scrabble-Regeln vergeben werden:
 Punkte | Buchstaben
 ------ | ------
 1 | A, E, I, L, N, O, R, S, T, U
