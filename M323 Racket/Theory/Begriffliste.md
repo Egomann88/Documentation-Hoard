@@ -6,23 +6,23 @@ Eine anonyme Funktion, die nicht über einen Namen, sondern über Referenzen auf
 
 ## Applikation
 
-Die Applikation ist die "Hauptfunktion" / das "Hauptprogramm" der funktionalen Programmierung. Man kann sie als eine grosse Funktion, in der alle anderen Funktionen aufgerufen werden, sehen. Man kann sie mit einem Argument als Eingabe aufrufen. Dieses Argument wird dann in den Funktionen verarbeitet bzw. startet die gewunschte Funktion.
+Die Applikation ist die Hauptfunktion bzw. das Hauptprogramm der funktionalen Programmierung. Sie stellt eine grosse Funktion dar, in der alle anderen Funktionen aufgerufen werden. Sie kann mit einem Argument als Eingabe aufgerufen werden, welches dann in den Funktionen verarbeitet bzw. die gewünschte Funktion startet.
 
 ## Gerüst der Funktion
 
-Die Beschreibung (Kommentar), der Name und die Parameter.
+Die Beschreibung (Kommentar), der Name und die Parameter einer Funktion.
 
 ## Rumpf der Funktion
 
-Der Inhalt der Funktion.
+Der Inhalt einer Funktion.
 
 ## Abdeckung (Tests)
 
-Die Abdeckung ist die Anzahl der getesteten Zeilen im Verhältnis zu den gesamten Zeilen. Das Ziel ist es, möglichst viel mit Tests abzudecken.
+Die Abdeckung bezieht sich auf die Anzahl der getesteten Zeilen im Verhältnis zu den gesamten Zeilen eines Codes. Das Ziel ist es, möglichst viele Teile des Codes mit Tests abzudecken.
 
 ## Signatur
 
-Signaturen funktionieren wie Interfaces. Sie definieren den Namen, Parameter und Rückgabetyp einer Funktion. Sie sind nicht zwingend notwendig, aber sie helfen, den Code zu verstehen und zu dokumentieren. Signaturen werden mit `define` definiert und mit `->` getrennt. Die linke Seite ist der Name der Funktion und die rechte Seite ist der Rückgabetyp.
+Signaturen fungieren ähnlich wie Interfaces. Sie definieren den Namen, die Parameter und den Rückgabetyp einer Funktion. Sie sind nicht zwingend notwendig, aber sie helfen dabei, den Code zu verstehen und zu dokumentieren. Signaturen werden mit `define` definiert und mit `->` getrennt. Die linke Seite ist der Name der Funktion, und die rechte Seite ist der Rückgabetyp.
 
 ```racket
 ; Links die Parameter, rechts der Rückgabetyp
@@ -33,24 +33,23 @@ Signaturen funktionieren wie Interfaces. Sie definieren den Namen, Parameter und
 
 ### Generell
 
-Eine Abhänigkeit (Dependency) z.B. Haus und Wand - Das Haus-Objekt kann nicht ohne Wand existieren.
+Eine Abhängigkeit, z. B. zwischen Haus und Wand - Das Haus-Objekt kann nicht ohne Wand existieren.
 
 ### In der funktionalen Programmierung
 
-Die Komposition ist eine Funktion, welche andere Funktionen (Dependencies) aufruft oder eine Signaturen
-(Interfaces).
+Die Komposition ist eine Funktion, die andere Funktionen (Dependencies) aufruft oder eine Signatur (Interfaces) verwendet.
 
 ## Fallunterscheidung (cond)
 
-Eine Fallunterscheidung ist eine Art von `switch-case`. Es gibt beliebig viele Bedingungen und `then`-Teile. Der `else`-Teil ist optional.
+Eine Fallunterscheidung ähnelt einem `switch-case`. Sie besteht aus beliebig vielen Bedingungen und `then`-Teilen. Der `else`-Teil ist optional.
 
 ## Binäre Verzweigung (if)
 
-Eine Binäre Verzweigung ist eine Art ein `if-else`. Es gibt drei Teile: die Bedingung, den `then`-Teil und den `else`-Teil. Der `else`-Teil ist obligatorisch.
+Eine Binäre Verzweigung ist ähnlich einem `if-else`. Sie besteht aus drei Teilen: der Bedingung, dem `then`-Teil und dem `else`-Teil. Der `else`-Teil ist obligatorisch.
 
 ## Record
 
-Record errinnern an Klassen in der objektorientierten Programmierung. Sie haben Konstruktoren, Prädikate und Selektoren. Records sind eine Art von Datenstruktur, die es erlaubt, Daten zu gruppieren. Sie werden mit `define-record` definiert.
+Records erinnern an Klassen in der objektorientierten Programmierung. Sie haben Konstruktoren, Prädikate und Selektoren. Records sind eine Art von Datenstruktur, die es erlaubt, Daten zu gruppieren. Sie werden mit `define-record` definiert.
 
 Die Struktur der Records ist vorgegeben und sieht so aus:
 
@@ -68,11 +67,11 @@ Die Struktur der Records ist vorgegeben und sieht so aus:
 (: TestRecord-value2 (TestRecord -> natural))
 ```
 
-Die Funktionen (und Signaturen) werden automatisch generiert. Wenn man eigene Objekete erstellt, sollte man eigene Signaturen schreiben.
+Die Funktionen (und Signaturen) werden automatisch generiert. Wenn man eigene Objekte erstellt, sollte man eigene Signaturen schreiben.
 
 ### Konstruktor
 
-Der Konstruktor erstellt ein Objekt vom Typ `TestRecord`. Erwartet zwei Argumente, ein String und eine natürliche Zahl.
+Der Konstruktor erstellt ein Objekt vom Typ `TestRecord` und erwartet zwei Argumente: einen String und eine natürliche Zahl.
 
 Beispiel, wie man den Konstruktor aufruft und den Wert speichert:
 
@@ -82,9 +81,9 @@ Beispiel, wie man den Konstruktor aufruft und den Wert speichert:
 
 ### Prädikat
 
-Das Prädikat ist eine Funktion, die überprüft, ob das Objekt vom Typ `TestRecord` ist. Das Prädikat ist optional und die Stelle wird ignoriert, wenn es nicht explizit definiert wird.
+Das Prädikat ist eine Funktion, die überprüft, ob das Objekt vom Typ `TestRecord` ist. Das Prädikat ist optional, und die Stelle wird ignoriert, wenn es nicht explizit definiert wird.
 
-Das Prädikat kann man für Abfragen benutzen:
+Das Prädikat kann für Abfragen benutzt werden:
 
 ```racket
 (TestRecord? test1)
@@ -92,7 +91,7 @@ Das Prädikat kann man für Abfragen benutzen:
 
 ### Selektoren
 
-Die Selektoren sind Funktionen, die den Wert des Objekts zurückgeben bzw beinhaleten. Sie funktionieren nur als Getter. Wenn man einen Wert ändern will, muss das aktuelle Objekt neu erstellt bzw. überschrieben werden.
+Die Selektoren sind Funktionen, die den Wert des Objekts zurückgeben. Sie funktionieren nur als Getter. Wenn man einen Wert ändern will, muss das aktuelle Objekt neu erstellt bzw. überschrieben werden.
 
 Beispiel, wie man die Selektoren aufruft und den Wert speichert:
 
@@ -101,15 +100,15 @@ Beispiel, wie man die Selektoren aufruft und den Wert speichert:
 (define test1-value2 (TestRecord-value2 test1)) ; Selektor aufrufen -> natural
 ```
 
-## Zusammengesetzte Daten (objekte)
+## Zusammengesetzte Daten (Objekte)
 
-Zusammengefasste Daten sind in Racket auch als Objekte bekannt. Objekte werden von den Records erstellt und sind eine Instanz von einem Record. Objekte haben keine eigenen Funktionen, sie benutzen die Funktionen des Records.
+Zusammengefasste Daten werden in Racket auch als Objekte bezeichnet. Objekte werden von den Records erstellt und sind Instanzen eines Records. Objekte haben keine eigenen Funktionen; sie nutzen die Funktionen des Records.
 
 Das [Record](#record) Kapitel zeigt die perfekten Beispiele, denn die erstellten Objekte sind Instanzen von `TestRecord`.
 
 ### Als Eingabe
 
-Ein Objekt kann man als Eingabe in eine Funktion geben, wie man einen normalen Wert gibt.
+Ein Objekt kann als Eingabe in eine Funktion gegeben werden, ähnlich wie ein normaler Wert.
 
 ```racket
 (: func (TestRecord -> string))
@@ -164,24 +163,25 @@ Die Datendefinition ist eine Art von Enumeration und Signierung. Sie wird benutz
   (signature (enum "dog" "cat" "snake"))
 ```
 
-Dieses Beispiel erstellt die Datendefinition `pet` und gibt an, dass Pet nur `"dog"`, `"cat"` oder `"snake"` sein kann. In das `enum` können beliebig viele Werte und von beliebigen Typen eingetragen werden.
+Dieses Beispiel erstellt die Datendefinition `pet` und gibt an, dass Pet nur `"dog"`, `"cat"` oder `"snake"` sein kann. In das
+
+ `enum` können beliebig viele Werte und von beliebigen Typen eingetragen werden.
 
 ## Abstraktion
 
-Abstraktion ist ein anderer Begriff für verallgemeinern oder reduzieren. Damit ist gemeint, dass Funktionen oder Klassen so geschrieben werden, dass sie möglichst allgemein und flexibel sind. Das Ziel ist, dass sie in möglichst vielen Situationen benutzt werden können. Wenn man davon spricht eine Funktion zu abstrahieren, dann meint man, dass diese verallgemeinert werden soll.
+Abstraktion ist ein anderer Begriff für Verallgemeinerung oder Reduktion. Damit ist gemeint, dass Funktionen oder Klassen so geschrieben werden, dass sie möglichst allgemein und flexibel sind. Das Ziel ist, dass sie in möglichst vielen Situationen benutzt werden können. Wenn man davon spricht, eine Funktion zu abstrahieren, dann meint man, dass sie verallgemeinert werden soll.
 
-z.B. Eine Liste kann nur Zahlen haben. Wenn man die Funktion abstrahiert, dann kann die Liste auch Strings oder andere Objekte haben.
+Beispiel: Eine Liste kann nur Zahlen enthalten. Wenn man die Funktion abstrahiert, dann kann die Liste auch Strings oder andere Objekte enthalten.
 
-Abstraktion kann vieles bedeuten, grundlegend ist es, ein offenes Konzept. Es reicht schon, wenn man nur den Namen einer Datei zu ändern, um sie zu abstrahieren.
+Abstraktion kann vieles bedeuten; grundlegend ist es ein offenes Konzept. Es reicht schon, den Namen einer Datei zu ändern, um sie zu abstrahieren.
 
 -> Tisch - Abstrahieren zu > Möbel
 
 ### Abstraktion vs Funktion
 
-Der Hauptunterschied ist, dass eine Abstraktion eine verallgemeinerte Funktion mit einem offen Rahmen ist. Die Funktion hat eine konkrete Aufgabe und Abfolge von Schritten.
+Der Hauptunterschied ist, dass eine Abstraktion eine verallgemeinerte Funktion mit einem offenen Rahmen ist. Die Funktion hingegen hat eine konkrete Aufgabe und Abfolge von Schritten.
 
-Das Hier wäre ein etwas längeres Beispiel, das die Abstraktion und Funktion erklärt:  
-Das Beispiel ist zwar in JavaScript, aber es ist ein gutes Beispiel, um den Unterschied zu zeigen.
+Das folgende Beispiel illustriert den Unterschied:
 
 ```javascript
 /* Nichts ist abstrahiert */
@@ -213,15 +213,15 @@ function setModalContent(title, content, onClose) {
 }
 ```
 
-Die Funktion `openModal` öffnet ein Modal und setzt den Titel und den Inhalt. Man kann die Funktion nicht weiter verwenden, weil sie festgeschrieben ist.
+Die Funktion `openModal` öffnet ein Modal und setzt den Titel und den Inhalt. Sie ist nicht weiterverwendbar, da sie festgeschrieben ist.
 
-Das untere Beispiel wird mit den Werten, welche angegeben werden, aufgerufen. Die Funktion `setModalContent` wird genutzt, als das Modal sich live aktuallisieren soll, ohne es neu zu öffnen. Speziell ist, dass die onClose-Funktion als Parameter übergeben wird, den es kann immer den Fall geben, dass die Funktion einen extra Schritt machen soll, bevor das Modal geschlossen wird.
+Das untere Beispiel hingegen kann mit verschiedenen Werten aufgerufen werden. Die Funktion `setModalContent` wird verwendet, um das Modal dynamisch zu aktualisieren, ohne es neu zu öffnen. Besonders ist hier, dass die `onClose`-Funktion als Parameter übergeben wird, da es immer den Fall geben kann, dass die Funktion einen zusätzlichen Schritt ausführen soll, bevor das Modal geschlossen wird.
 
 ### Generischer Typ
 
-Ein generischer Typ ist ein Platzhalter, der es ermöglicht, denselben Code für verschiedene Datentypen zu verwenden, ohne ihn für jeden einzelnen Datentyp neu schreiben zu müssen. Das ist eine Basis vom Programmieren und wird von allen Programmiersprachen anders importiert.
+Ein generischer Typ ist ein Platzhalter, der es ermöglicht, denselben Code für verschiedene Datentypen zu verwenden, ohne ihn für jeden einzelnen Datentyp neu schreiben zu müssen. Das ist eine Basis des Programmierens und wird von allen Programmiersprachen unterschiedlich implementiert.
 
-In Racket wird es mit `%` eingeleitet und ein paar Funktionen welchen den Typ zuweisen. Aus den Blöcken hatten wir ein Beispiel, wie man generische Listen erstellt:
+In Racket wird er mit `%` eingeleitet, gefolgt von Funktionen, welche den Typ zuweisen. Aus den Blöcken hatten wir ein Beispiel, wie man generische Listen erstellt:
 
 ```racket
 (define list-of
@@ -241,7 +241,7 @@ In Racket wird es mit `%` eingeleitet und ein paar Funktionen welchen den Typ zu
 (: rest ((cons-list-of %element) -> (list-of %element)))
 ```
 
-C# stellt generische Typen mit `T` dar. Das `T` steht für `Type` und stellt den ganzen Prozess einfacher dar.
+In C# werden generische Typen mit `T` dargestellt, wobei `T` für `Type` steht und den Prozess vereinfacht.
 
 ```csharp
 public static List<T> ListOf<T>(T element) {
