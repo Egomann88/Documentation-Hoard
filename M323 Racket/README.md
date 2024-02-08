@@ -11,8 +11,7 @@
 - [Block 7](./Theory/B7.md) Signaturvariabeln, Listen abstrahieren und Level Up
 - [Block 8](./Theory/B8.md) High Order Functions
 - [Block 9](./Theory/B9.md) Fold
-- [Block 10](./Theory/B10.md) _carte blanche_
-- [Block 11](./Theory/B11.md) **Prüfung**
+- [Block 10](./Theory/B10.md) **Prüfung und Modulabschluss**
 - Modulabschluss
 
 Hinweis: Die Tasks haben so sprunghafte Nummern, weil es die Nummern von den Kapiteln aus dem originalen [Skript](Skript.pdf) sind.
