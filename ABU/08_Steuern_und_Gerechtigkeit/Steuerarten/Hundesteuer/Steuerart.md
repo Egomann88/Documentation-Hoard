@@ -35,7 +35,8 @@ _Quelle: Input des Steuerexperten_
 
 Die Höhe der Hundegebühr bewegt sich im Bereich von 50 Franken bis hin zu 200 Franken.
 
-> _"Die Steuer kann zudem je nach Grösse oder Gewicht des Hundes unterschiedlich ausfallen."_ ~ [ch.ch](https://www.ch.ch/de/steuern-und-finanzen/steuerarten/hundesteuer/#weiterfuhrende-informationen)  
+> _"Die Steuer kann zudem je nach Grösse oder Gewicht des Hundes unterschiedlich ausfallen."_ ~ [ch.ch](https://www.ch.ch/de/steuern-und-finanzen/steuerarten/hundesteuer/#weiterfuhrende-informationen)
+
 > _"Bei wieder anderen Ortschaften des Landes zählt die Rückenhöhe, was bedeutet, dass Hundehalter für Hunde ab einer Rückenhöhe von 40 Zentimeter 20 Franken oder mehr obendrauf zahlen müssen."_ ~ [hund.ch | 25.01.2024](https://www.hund.ch/die-hundesteuer-der-schweiz)
 
 #### Wie viel nimmt der Staat durch Hundesteuern ein?
