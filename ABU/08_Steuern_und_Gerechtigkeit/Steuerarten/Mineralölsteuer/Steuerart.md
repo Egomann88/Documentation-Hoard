@@ -12,6 +12,10 @@ Die Mineralölsteuer wird indirekt beim Kauf der mineralölhaltigen Produkte erh
 
 Die Mineralölsteuer wird vom Verkäufer erhoben und auf den Endverbraucher übertragen. Der Verkäufer ist für die Zahlung der Steuer verantwortlich.
 
+### Wer sind die Konsumenten?
+
+Meistens Motorfahrzeugbesitzer und Heizölkunden. Jeder der ein Auto besitzt, muss Benzin oder Diesel tanken und somit die Mineralölsteuer zahlen. Heizölkunden zahlen die Steuer beim Einkauf von Heizöl oder indirekt über die Heizkosten.
+
 ## Auf welchen Produkten wird die Steuer erhoben?
 
 Die Mineralölsteuer wird auf Benzin, Diesel, Heizöl und andere Mineralöle erhoben.
@@ -28,6 +32,8 @@ Die Steuersätze für die Mineralölsteuer variieren je nach Art des Mineralöls
 | Dieselöl            | 79,57 Rappen |
 | Heizöl extraleicht  | 0,3 Rappen   |
 
+Aktuell (2024 Januar) kostet ein Liter Benzin ca. 1.8 CHF, wovon 76.82 Rappen (ca. 42%) Mineralölsteuer sind.
+
 ### Wie viel nimmt der Staat durch Mineralölsteuern ein?
 
 Im Jahr 2022 bewirkte die Mineralölsteuer 7,6 % der Bundeseinnahmen in der Schweiz.
@@ -42,4 +48,8 @@ Die Mineralölsteuer wird auf Bundesebene erhoben; eine besondere Verbrauchsteue
 
 ## Zusätzliche Informationen
 
-- Das Heizöl wird beim Import in der Schweiz rötlich eingefärbt
+- Das Heizöl wird beim Import in der Schweiz rötlich eingefärbt.
+
+## Quellen:
+
+- Bildquelle: Admin.ch (MineralölsteuerTabelle 2022)
