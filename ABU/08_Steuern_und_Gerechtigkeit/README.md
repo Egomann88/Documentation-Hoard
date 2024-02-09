@@ -1,5 +1,9 @@
 # ABU 08: Steuern und Gerechtigkeit
 
+<p style="font-size: 20px; color: red; font-weight: bold">
+Disclaimer: Alle Informationen beziehen sich vom Jahr 2024 und können sich im Laufe der Zeit ändern oder invalide werden.
+</p>
+
 ## Planung
 
 - [Steuersystem](./Steuersystem/Steuersystem.md) Steuersystem der Schweiz
