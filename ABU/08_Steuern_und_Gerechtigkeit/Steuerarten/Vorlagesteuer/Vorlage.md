@@ -31,7 +31,7 @@ Die [XXX] ist eine **[YYY]**. Sie dienst als **[ZZZ]** ...
 
 [Statistiken, Zahlen, Vergleiche, ...]
 
-### Zweck der Hundesteuer
+### Zweck der [XXX]
 
 [Was soll damit erreicht werden? Prävention, Lenkung, Finanzierung, ...]
 
