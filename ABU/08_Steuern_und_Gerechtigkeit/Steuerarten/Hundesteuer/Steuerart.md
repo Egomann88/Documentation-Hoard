@@ -1,19 +1,3 @@
-# Aufgabenstellung
-
-Die Auftragsschritte sind so zu erarbeiten, dass folgende Kriterien erfüllt sind
-
-- Zitation Buch Gesellschaft
-- Rückbezüge Gesetzessammlung
-- Rückbezüge zum Input des Steuerexperten
-- Grafiken und Text
-- Schlüsselbegriffe fett markiert, nachvollziehbar und korrekte Sprache
-
-## Merkmale
-
-- direkt/indirekt
-- Aufwand/Verbrauch/Besitz
-- Gewalten-teilung
-
 # Steuerart: Hundesteuer
 
 ## Steuer aussuchen, definieren, einordnen und abgrenzen
