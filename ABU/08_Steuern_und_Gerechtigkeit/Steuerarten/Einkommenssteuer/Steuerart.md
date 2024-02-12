@@ -40,7 +40,7 @@ Ausnahmen:
 - Alle Kosten, welche für die Arbeit aufkommen
   - Verpflegung,...
     - Man kann 15-20 Franken jeden Tag abziehen
-      - Nur, wenn man nicht in der eigenen Gemeinde arbeitet
+      - Nur, wenn man _nicht_ in der Gemeinde, in der man lebt, arbeitet
   - Arbeitsweg
   - Arbeitskleidung
   - Arbeitsmittel
