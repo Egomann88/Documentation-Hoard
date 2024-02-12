@@ -18,7 +18,7 @@ Steuern varrieren je nach Gemeinde
 | Entlebuch | 4.1        | 17'974         |
 | Meggen    | 2.7455     | 12'036         |
 
-[Einkommensteuertraif Luzern](Internetlink)
+[Einkommensteuertraif Luzern](https://steuern.lu.ch/publikationen/nav_einheiten_tarife/stnap_steuereinheiten_2024)
 
 ## Beginn und Ende der Steuerpflicht
 
