@@ -60,6 +60,7 @@ So kann man in Luzern seinen Erben Geld schenken und man _nach_ 5 Jahren stirbt,
 ### Wozu zahlen wir Steuern
 
 **Für die Infrastruktur**
+
 ![FuerDieInfrastruktur](./assests/FuerDieInfrastruktur.png)
 
 ## Tagebuch eines Steuerzahlers
