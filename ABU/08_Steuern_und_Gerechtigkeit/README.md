@@ -6,8 +6,8 @@ Disclaimer: Alle Informationen beziehen sich vom Jahr 2024 und können sich im L
 
 ## Planung
 
-- [Steuersystem](./Steuersystem/Steuersystem.md) Steuersystem der Schweiz
-- [Steuerarten](./Steuerarten/Steuerarten.md) Steuerarten
+- [Steuersystem](./Steuersystem/README.md) Steuersystem der Schweiz
+- [Steuerarten](./Steuerarten/README.md) Steuerarten
 - [Steuerpolitik]() Steuerpolitik
 - [Grundlagen-Prüfung]() **Prüfung**
 - [Steuerpolitik]() Steuerpolitik

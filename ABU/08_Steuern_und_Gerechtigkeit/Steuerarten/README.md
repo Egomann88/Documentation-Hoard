@@ -35,7 +35,7 @@ Die Einkommenssteuer ist eine Steuer auf das Einkommen natürlicher Personen. Si
 
 Zusätzliche Faktoren sind Wohnort, Familienstand und Kinder. Sie wird jährlich erhoben und ist eine der wichtigsten Einnahmequellen der Kantone und Gemeinden.
 
-[Weiterlesen](./Einkommenssteuer/Steuerart.md)
+[Weiterlesen](./Einkommenssteuer/README.md)
 
 ## Mehrwertsteuer
 
@@ -43,7 +43,7 @@ _Das ist die Steuer, die auf fast alle Produkte und Dienstleistungen erhoben wir
 
 Die Mehrwertsteuer ist eine indirekte Steuer, die auf den Konsum erhoben wird. Sie wird auf fast alle Produkte und Dienstleistungen erhoben. Der Normalsatz beträgt <s>7.7%</s> 8.1 % seit dem 01.01.2024. Der reduzierte Satz beträgt neu sei dem 01.01.2024 2.6 % statt 2.5 %. Der Sondersatz wurde von 3.7 % auf 3.8 % erhöht. Die Mehrwertsteuer ist eine wichtige und grösste Einnahmequelle des Bundes.
 
-[Weiterlesen](./Mehrwertsteuer/Steuerart.md)
+[Weiterlesen](./Mehrwertsteuer/README.md)
 
 ## Unternehmenssteuer (Gewinn- und Kapitalsteuer jur. Personen)
 
@@ -57,7 +57,7 @@ Die Mehrwertsteuer ist eine indirekte Steuer, die auf den Konsum erhoben wird. S
 
 Die Mineralölsteuer ist eine indirekte Verbrauchsteuer, die auf bestimmte Mineralöle und Treibstoffen erhoben wird. Jeder der ein Auto / Motorrad besitzt und-oder Heizöl kauft (heizen generell) zahlt die Mineralölsteuer.
 
-[Weiterlesen](./Mineralölsteuer/Steuerart.md)
+[Weiterlesen](./Mineralölsteuer/README.md)
 
 ## Steuer auf Spirituosen
 
@@ -67,7 +67,7 @@ Die Mineralölsteuer ist eine indirekte Verbrauchsteuer, die auf bestimmte Miner
 
 Jeder Hundebesitzer muss jährlich eine Hundesteuer bezahlen. Die Höhe der Steuer variiert je nach Gemeinde.
 
-[Weiterlesen](./Hundesteuer/Steuerart.md)
+[Weiterlesen](./Hundesteuer/README.md)
 
 ## Lotteriesteuer
 
