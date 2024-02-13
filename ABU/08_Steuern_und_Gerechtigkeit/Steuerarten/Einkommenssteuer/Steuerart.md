@@ -1,24 +1,18 @@
 # Steuerart: Einkommensteuer
 
-## Steuer aussuchen, definieren, einordnen und abgrenzen
+## Was ist die Einkommensteuer?
 
-### Was ist die Einkommensteuer?
+Die Einkommensteuer ist eine direkte Steuer auf **Einkommen und Vermögen**, die dem **fiskalpolitischen** Zweck dient, den Staat zu finanzieren. Neben der Mehrwertsteuer ist sie die wichtigste Einnahmequelle des Staates. Die Einnahmen aus der Einkommensteuer finanzieren verschiedene staatliche Aufgaben und Leistungen wie Bildung, Gesundheitswesen, öffentliche Sicherheit und Infrastrukturprojekte.
 
-Die Einkommensteuer ist eine **Einkommen und Vermögenssteuer**. Sie dient dem **Fiskalpolitischtischen** Zweck, also der **Finanzierung** des Staates. Es ist neben der Mehrwertsteuer die wichtigste Einnahmequelle des Staates.
+Die Steuer wird jährlich direkt erhoben, indem Steuerpflichtige eine Steuererklärung ausfüllen, auf deren Basis die Steuer festgesetzt wird. In der Schweiz wird die Einkommensteuer von den Kantonen, Gemeinden und dem Bund erhoben. Sie wird durch verschiedene Abzüge und Befreiungen beeinflusst, die Steuerpflichtigen helfen können, ihre Steuerlast zu reduzieren. Dazu gehören beispielsweise Versicherungsprämien, Beiträge an die berufliche Vorsorge (Säule 3a), Fahrkosten für den Arbeitsweg und bestimmte Berufsauslagen.
 
-Mit den Einnahmen aus der Einkommensteuer werden verschiedene staatliche Aufgaben und Leistungen finanziert, darunter Bildung, Gesundheitswesen, öffentliche Sicherheit, Infrastrukturprojekte und andere staatliche Ausgaben.
+### Wie wird sie erhoben?
 
-Die Steuer wird direkt erhoben, was bedeutet, dass Steuerpflichtige eine jährliche Steuererklärung ausfüllen müssen, auf Basis derer die Steuer festgesetzt wird. In der Schweiz wird die Einkommensteuer von den Kantonen, Gemeinden und dem Bund erhoben. Die Einkommensteuer wird durch verschiedene Abzüge und Befreiungen beeinflusst, die Steuerpflichtigen helfen können, ihre Steuerlast zu reduzieren. Dazu gehören beispielsweise Versicherungsprämien, Beiträge an die berufliche Vorsorge (Säule 3a), Fahrkosten für den Arbeitsweg, bestimmte Berufsauslagen usw.
-
-Man muss seine Angaben anmelden, indem man eine jährliche Steuererklärung ausfüllt und einreicht. Auf Basis dieser Steuererklärung wird die Einkommensteuer berechnet und festgesetzt.
-
-### direkt erhoben
-
-Wie der Name **direkte Bundessteuer** schon sagt, wird sie direkt erhoben. Jedes Jahr, muss man eine Steuererklärung ausfüllen von der die Steuer erhoben wird.
+Die Einkommensteuer wird direkt erhoben, was bedeutet, dass Steuerpflichtige eine jährliche Steuererklärung ausfüllen müssen, auf Basis derer die Steuer festgesetzt wird.
 
 ### Wie hoch ist sie?
 
-Die Einkommensteuer ist eine **progressive Steuer**. Das heisst, dass der Steuersatz mit dem Einkommen steigt. Es gibt den Steuerfuss, welcher von der Gemeinde festgelegt wird. Der Steuerfuss ist der Prozentsatz, welcher auf das Einkommen angewendet wird. Der Grundfuss wird vom Bund festgelegt und ist 1.6. Wie genau der Steuerfuss angewendet wird, wissen wird nicht.
+Die Einkommensteuer ist eine **progressive Steuer**, bei der der Steuersatz mit dem Einkommen steigt. Der Steuerfuss wird von der Gemeinde festgelegt und ist der Prozentsatz, der auf das Einkommen angewendet wird. Der Grundfuss wird vom Bund festgelegt und beträgt 1.6. Die genaue Anwendung des Steuerfusses variiert.
 
 #### Beispiel (Daten von 2023)
 
@@ -29,39 +23,33 @@ Die Einkommensteuer ist eine **progressive Steuer**. Das heisst, dass der Steuer
 | Entlebuch | 4.1        | 17'974         |
 | Meggen    | 2.7455     | 12'036         |
 
-Hier kann man die Steuerfuss seiner Gemeinde finden: [Einkommensteuertraif Luzern](https://steuern.lu.ch/publikationen/nav_einheiten_tarife/stnap_steuereinheiten_2024)
+[Link zur Steuertabelle von Luzern](https://steuern.lu.ch/publikationen/nav_einheiten_tarife/stnap_steuereinheiten_2024)
 
 #### Steuervereinfachungen und Steuerbefreiungen
 
 ##### Steuervereinfachungen
 
-Man kann diverse Abzüge machen, um die Steuer zu reduzieren. Dazu gehören:
+Diverse Abzüge können gemacht werden, um die Steuer zu reduzieren, darunter:
 
 - Versicherungsprämien und Zinsen von Sparkapitalien
 - Individuelle Prämienverbilligung
 - Beiträge an Säule 3a
-- Fahrkosten (für den Arbeitsweg)
-- Berufsauslagen
-  - Arbeitskleidung
-  - Arbeitsmittel
-  - Weiterbildung (Schulmaterial)
-  - Zusätzliche Dienstleistungen (Office, Coopilot, GPT-4, etc.)
-- Verpflegungskosten
-  - Man kann 15-20 Franken jeden Tag abziehen
-  - Nur, wenn man _nicht_ in der Gemeinde, in der man lebt, arbeitet
+- Fahrkosten für den Arbeitsweg
+- Berufsauslagen wie Arbeitskleidung, Arbeitsmittel und Weiterbildungskosten
+- Verpflegungskosten (nur ausserhalb der Gemeinde des Arbeitsorts)
+  - 15-20 Franken pro Arbeitstag
 - Mietausgaben
 - Schuldzinsen
 - Unterhaltskosten für Liegenschaften
 - Übrige Abzüge
-  - _Sozialabzüge_ wie Kinderabzug und Verheiratenabzug
+  - Sozialabzüge wie Kinderabzug und Verheiratetenabzug
 
-Es gibt auch folgende Einkommen, die als Ausnahme gelten und nicht versteuert werden:
+Bestimmte Einkommen gelten als Ausnahmen und werden nicht besteuert, darunter:
 
-- Sold (Taggeld z.B. Militärgeld)
-- Kapitalgewinn (Konsole kaufen für 1000 und für 1500 verkaufen; nur wenn es einmalig bzw. seltener ist)
-- Aktien ausser die Dividenen der Aktien
+- Sold (z.B. Militärgeld)
+- Kapitalgewinn (z.B. einmalige Aktienverkäufe)
 
-**Hinweis: Zwei Personen zählen als ein Subjekt, wenn sie verheiratet sind, daher solten zwei arbeitende Paare niemals heiraten.**
+**Hinweis: Verheiratete Paare werden steuerlich als ein Subjekt behandelt, daher sollten zwei arbeitende Partner niemals heiraten.**
 
 ##### Steuerbefreiungen
 
@@ -72,18 +60,19 @@ Es gibt auch folgende Einkommen, die als Ausnahme gelten und nicht versteuert we
 | 18-   | Nein      | 50                   |
 | 18-   | Ja        | 50 + Einkommensteuer |
 
-#### Wie viel nimmt der Staat mit dieser Steuer ein?
+### Wie viel nimmt der Staat mit dieser Steuer ein?
 
-Die Einkommensteuer macht 34.5 Prozent der Einnahmen aus. Damit ist sie zusammen mit der Mehrwertsteuer die wichtigste Einnahmequelle des Bundes. Besteuert wird das Einkommen und das Vermögen.
+Die Einkommensteuer macht 34.5 Prozent der Einnahmen des Bundes aus und ist damit neben der Mehrwertsteuer die wichtigste Einnahmequelle. Sie besteuert Einkommen und Vermögen.
+
 ![Einnahmen](./assets/einnahmen.jpg)
 
-### Zweck der Einkommensteuer
+## Zweck der Einkommensteuer
 
-Es wird nichts genaues gefunden. Wahrscheinlich ist es, dass die Einkommensteuer die Finanzierung des Staates dient.
+Der genaue Zweck der Einkommensteuer ist nicht spezifisch festgelegt, aber sie dient wahrscheinlich der Finanzierung des Staates.
 
 ## Wer erhebt die Steuer?
 
-Die Einkommensteuer wird von den Kantonen, Gemeinden und dem Bund erhoben. Der Bund erhebt die **direkte Bundessteuer** und Kantone und Gemeinden derren gleichnamige Steuer. Die Gemeinde ist diejenige, die einem die Steurerklärung und Rechnung schickt.
+Die Einkommensteuer wird von den Kantonen, Gemeinden und dem Bund erhoben. Der Bund erhebt die direkte Bundessteuer, während Kantone und Gemeinden ihre gleichnamige Steuer erheben. Die Gemeinde ist die Stelle, die die Steuererklärung und die Rechnung versendet.
 
 # Quellen
 
