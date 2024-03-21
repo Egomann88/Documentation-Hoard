@@ -12,8 +12,7 @@ Ein Angreifer könnte bösartigen JavaScript-Code in ein Kommentarfeld einer Blo
 
 ![xss](./assets/xss.png)
 
-[Lokales Beispiel](http://localhost/xss)  
-[Link zum Sourcecode](./XSS-Example/)
+[Beispiel & Sourcecode](https://github.com/Egomann88/BlogPage-with-XSS-weakness)
 
 ### echtes Beispiel: Twitter
 
