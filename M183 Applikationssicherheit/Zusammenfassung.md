@@ -1,35 +1,45 @@
 # Zusammenfassung
 
-## Autor
+## Autoren
 
-- Krystian Usarz
+### Bearbeitet und weitergeführt von
+
+- **Justin Urbanek**
+  - [Github](https://github.com/Egomann88)
+
+### Original erstellt von
+
+- **Krystian Usarz**
   - <usarz.krystian7@gmail.com>
   - [Github](https://github.com/KrystianUsarz)
 
 ## Unbefugte Datenbeschaffung
-Der Artikel StGB Art. 143 besagt Grundsätzlich, dass jeder, der sich zugang zu Daten um sich zu bereichern oder um sich einen Vorteil zu verschafften  zugang verschafft und diese nicht für Ihn bestimmt und gegen seinen unbefugten zugriff besonderst geschützt sind mit einer Freiheitsstrage bis zu 5 Jahren oder einer Geldstrafe bestraft wird. Die einzige ausnahme ist die Famillie, dort wird dies nur auf Antrag verfolgt.
- 
-Unbefugtes Eindringen in ein Datenverarbeitungssysthem
-Wer sich zugang ine ein Fremdes gegen seinen Zugriff besonders gesichertes Datenverarbeitungssysthem eindringt wird auf Antrag mit Freiheitsstrafe bis zu drei Jahren oder einer Geldstrafe bestraft. Das selbe gilt für die unterstützung solcher Aktionen durch das weitergeben von Passwörtern oder Programmen.
- 
+
+**Art. 143 StGB** besagt, wenn eine Person sich _Zugang_ zu Daten verschafft, welche nicht für diese bestimmt sind und die Daten gegen unbefugten Zugriff geschützt sind, kann eine Freiheitsstrafe von bis zu 5 Jahren oder eine Geldstrafe erhalten.
+
+## Unbefugtes Eindringen in ein Datenverarbeitungssystem
+
+Personen, welche in ein fremdes, gegen unbefugten Zugriff geschütztes Datenverarbeitungssystem eindringen, können mit einer Freiheitsstrafe von bis zu 3 Jahren oder einer Geldstrafe bestraft werden. Die Unterstützung solcher Aktionen durch das Weitergeben von Passwörtern oder Programmen ist ebenfalls strafbar.
+
 ## Schutzziele
+
 - CIA
-    - Confidentiality = Vertraulichkeit
-      - Vertraulichkeit ist die Eigenschaft, dass Informationen für unbefugte Personen, Entitäten oder Prozesse, nicht verfügbar gemacht oder offenbart werden.
-    - Integrity= Integrität
-      - Datenintegrität bedeutet die Aufrechterhaltung und Sicherung der Genauigkeit und Vollständigkeit der Daten.
-      - Daten dürfen nicht unberechtigt oder unentdeckt geändert werden können.
-    - Availability = Verfügbarkeit
-      - Verfügbarkeit bedeutet, dass Informationen abrufbar sein müssen, wenn sie benötigt werden.
-    - Non-Repudiation = nicht-Abstreitbarkeit
-      - Die nicht-Abstreitbarkeit bedeutet, dass eine Partei einer Transaktion nicht bestreiten kann, eine Transaktion erhalten zu haben.
-      - Die andere Partei kann nicht verweigern, eine Transaktion gesendet zu haben.
- 
+  - Confidentiality = Vertraulichkeit
+    - Vertraulichkeit ist die Eigenschaft, dass Informationen für unbefugte Personen, Entitäten oder Prozesse, nicht verfügbar gemacht oder offenbart werden.
+  - Integrity= Integrität
+    - Datenintegrität bedeutet die Aufrechterhaltung und Sicherung der Genauigkeit und Vollständigkeit der Daten.
+    - Daten dürfen nicht unberechtigt oder unentdeckt geändert werden können.
+  - Availability = Verfügbarkeit
+    - Verfügbarkeit bedeutet, dass Informationen abrufbar sein müssen, wenn sie benötigt werden.
+  - Non-Repudiation = nicht-Abstreitbarkeit
+    - Die nicht-Abstreitbarkeit bedeutet, dass eine Partei einer Transaktion nicht bestreiten kann, eine Transaktion erhalten zu haben.
+    - Die andere Partei kann nicht verweigern, eine Transaktion gesendet zu haben.
+
 ## Informationsquellen zu Schwachstellen
- 
+
 - NCSC
 - GovCert
-- Medien (Sociale Medien, Zeitungen)
+- Medien (soziale Medien, Zeitungen)
 - CVE Details
 - Security Veranstaltungen
   - Swiss Cyber Storm
@@ -37,280 +47,397 @@ Wer sich zugang ine ein Fremdes gegen seinen Zugriff besonders gesichertes Daten
 
 ## Einstiegsauftrag zu CIA
 
-### Prominente Sicherheitsverletzungen:
-  - Equifax (2017): Eine Sicherheitslücke in einer Webanwendung führte dazu, dass das Unternehmen die personenbezogenen Daten von 145 Millionen US-Bürgern verlor. Gestohlen wurden unter anderem Namen, Sozialversicherungsnummern und Führerscheinnummern1.
-  - Yahoo (2013): Durch einen Phishing-Angriff konnten sich Hacker Zugang zum Netzwerk des Unternehmens verschaffen. Dabei wurden insgesamt 3 Milliarden Benutzerkonten kompromittiert1.
-  - Toyota: Eine Datenpanne trat auf, da sich ein Dritter mit Zugangsdaten, die er aus dem von einem Drittanbieter auf GitHub veröffentlichten Quellcode erhalten hatte, Zugang zu einem Unternehmensserver verschaffen konnte2.
+### Prominente Sicherheitsverletzungen
 
+- Equifax (2017): Eine Sicherheitslücke in einer Webanwendung führte dazu, dass das Unternehmen die personenbezogenen Daten von 145 Millionen US-Bürgern verlor. Gestohlen wurden unter anderem Namen, Sozialversicherungsnummern und Führerscheinnummern.
+- Yahoo (2013): Durch einen Phishing-Angriff konnten sich Hacker Zugang zum Netzwerk des Unternehmens verschaffen. Dabei wurden insgesamt 3 Milliarden Benutzerkonten kompromittiert.
+- Toyota: Eine Datenpanne trat auf, da sich ein Dritter mit Zugangsdaten, die er aus dem von einem Drittanbieter auf GitHub veröffentlichten Quellcode erhalten hatte, Zugang zu einem Unternehmensserver verschaffen konnte.
 
-### Anwendungen, in denen Vertraulichkeit, Verfügbarkeit, Integrität und Nicht-Abstreitbarkeit von entscheidender Bedeutung sind:
-  1. Online-Banking: Vertraulichkeit ist entscheidend, um sicherzustellen, dass nur der Kontoinhaber Zugang zu seinen Finanzinformationen hat. Verfügbarkeit ist wichtig, damit Kunden jederzeit auf ihre Konten zugreifen können. Integrität stellt sicher, dass Transaktionen korrekt und vollständig sind. Nicht-Abstreitbarkeit ist wichtig, um sicherzustellen, dass einmal durchgeführte Transaktionen nicht abgestritten werden können3.
-  2. Gesundheitswesen: Patientendaten müssen vertraulich behandelt werden. Verfügbarkeit ist entscheidend, damit medizinisches Personal jederzeit auf Patienteninformationen zugreifen kann. Integrität ist wichtig, um sicherzustellen, dass Patientendaten korrekt und unverändert sind. Nicht-Abstreitbarkeit ist wichtig, um sicherzustellen, dass medizinische Aufzeichnungen authentisch sind und nicht abgestritten werden können3.
-  3. E-Commerce: Vertraulichkeit ist wichtig, um Kundendaten und Zahlungsinformationen zu schützen. Verfügbarkeit stellt sicher, dass Kunden jederzeit Einkäufe tätigen können. Integrität stellt sicher, dass Transaktionen korrekt und vollständig sind. Nicht-Abstreitbarkeit ist wichtig, um sicherzustellen, dass einmal durchgeführte Transaktionen nicht abgestritten werden können
-  - [Quelle](https://www.kryptowissen.de/schutzziele.php)
- 
-## Vertraulcihkeit
- 
-**Definition von Vertraulichkeit:** Vertraulichkeit ist die Eigenschaft einer Nachricht, nur für einen beschränkten Empfängerkreis vorgesehen zu sein. Weitergabe und Veröffentlichung sind nicht erwünscht. [Vertraulichkeit wird durch Rechtsnormen geschützt, sie kann auch durch technische Mittel gefördert oder erzwungen werden1.](https://de.wikipedia.org/wiki/Vertraulichkeit)
+### Anwendungen, in denen Vertraulichkeit, Verfügbarkeit, Integrität und Nicht-Abstreitbarkeit von entscheidender Bedeutung sind
 
-#### Alltägliche Beispiele für Vertraulichkeit:
-  1. Arbeitsplatz: Eine typische Bedrohung für die Vertraulichkeit von Daten ist, wenn der Arbeitsplatz akustisch oder visuell nicht richtig abgesichert ist und Unbefugte so einfach an Informationen gelangen können2.
-  2. E-Mails: Unverschlüsselte E-Mails sind wie Postkarten. Alles, was darin steht, ist potenziell für jeden lesbar, während die E-Mail vom Sender zum Empfänger transportiert wird2.
-  3. Gespräche: Vertraulichkeit kann durch organisatorische Maßnahmen erreicht werden, indem der Gesprächskreis klein ist, sich an einem Ort unterhält, an dem sich Dritte nicht aufhalten, die Lautstärke des Gesprächs anpasst und die Teilnehmer an die Vertraulichkeit erinnert oder sie auf die Vertraulichkeit verpflichtet3.
+1. Online-Banking:
+    - Vertraulichkeit ist entscheidend.
+    - Verfügbarkeit, damit Kunden jederzeit auf ihre Konten zugreifen können.
+    - Integrität stellt sicher, dass Transaktionen korrekt und vollständig sind.
+    - Nicht-Abstreitbarkeit ist wichtig, um sicherzustellen, dass einmal durchgeführte Transaktionen nicht abgestritten werden können.
+2. Gesundheitswesen:
+    - Patientendaten müssen vertraulich behandelt werden.
+    - Verfügbarkeit, damit medizinisches Personal jederzeit auf Patienteninformationen zugreifen kann.
+    - Integrität, um sicherzustellen, dass Patientendaten korrekt und unverändert sind.
+    - Nicht-Abstreitbarkeit, um sicherzustellen, dass medizinische Aufzeichnungen authentisch sind und nicht abgestritten werden können.
+3. E-Commerce:
+    - Vertraulichkeit schützt Kundendaten und Zahlungsinformationen.
+    - Verfügbarkeit sorgt, dass Kunden jederzeit Einkäufe tätigen können.
+    - Integrität stellt sicher, dass Transaktionen korrekt und vollständig sind.
+    - Nicht-Abstreitbarkeit, damit durchgeführte Transaktionen nicht abgestritten werden können.
 
-### Verschlüsselungstechniken:
-  1. **Symmetrische Verschlüsselung:** Bei dieser Methode wird derselbe Schlüssel zum Verschlüsseln und Entschlüsseln der Daten verwendet. Ein bekanntes Beispiel ist der Advanced Encryption Standard (AES)4.
-  2. **Asymmetrische Verschlüsselung:** Hier werden zwei Schlüssel verwendet - ein öffentlicher Schlüssel zum Verschlüsseln der Daten und ein privater Schlüssel zum Entschlüsseln. Ein bekanntes Beispiel ist das RSA-Verfahren (Rivest–Shamir–Adleman)4.
-  3. **Elliptic Curve Cryptography (ECC):** Dies ist eine Form der asymmetrischen Verschlüsselung, die auf der Algebra von elliptischen Kurven basiert. Sie bietet eine hohe Sicherheit bei relativ kurzen Schlüssellängen4.
+## Vertraulichkeit
+
+**Definition von Vertraulichkeit:** Vertraulichkeit ist die Eigenschaft einer Nachricht, nur für einen beschränkten Empfängerkreis vorgesehen zu sein. Weitergabe und Veröffentlichung sind nicht erwünscht. Vertraulichkeit wird durch Rechtsnormen geschützt, sie kann auch durch technische Mittel gefördert oder erzwungen werden.
+
+### Alltägliche Beispiele für Vertraulichkeit
+
+1. **Arbeitsplatz:** Der Arbeitsplatz nicht korrekt akustisch oder visuell abgesichert.
+
+2. **E-Mails:** Unverschlüsselte E-Mails sind wie Postkarten. Alles, was darin steht, ist potenziell für jeden lesbar, während die E-Mail vom Sender zum Empfänger im Ende-zu-Ende Stil transportiert wird.
+
+3. **Gespräche:** Vertraulichkeit kann durch organisatorische Massnahmen erreicht werden. z.B. Eine Sitzung von Teammitgliedern ist so schlank wie möglich gehalten und finden an einem Ort statt, an dem Dritte keinen Zutritt haben.
+
+### Verschlüsselungstechniken
+
+1. **Symmetrische Verschlüsselung:** Bei dieser Methode wird derselbe Schlüssel zum Verschlüsseln und Entschlüsseln der Daten verwendet.
+    - z.B. [Advanced Encryption Standard (AES)](https://studyflix.de/informatik/aes-verschlusselung-1611)
+2. **Asymmetrische Verschlüsselung:** Hier werden zwei Schlüssel verwendet – ein öffentlicher Schlüssel zum Verschlüsseln der Daten und ein privater Schlüssel zum Entschlüsseln.
+    - z.B. [RSA-Verfahren (Rivest–Shamir–Adleman)](https://studyflix.de/informatik/rsa-verschlusselung-1608)
+3. **Elliptic Curve Cryptography (ECC):** Eine Form der asymmetrischen Verschlüsselung, die auf den [elliptischen Kurven](https://de.wikipedia.org/wiki/Elliptische_Kurve) basiert.
 
 ## Verfügbarkeit
- 
-**Unterschied zwischen DoS und DDoS:** Ein Denial of Service (DoS)-Angriff ist ein Angriff eines einzelnen Systems auf ein einzelnes System, während bei einem Distributed Denial of Service (DDoS)-Angriff mehrere Systeme ein einzelnes System angreifen1. Der Hauptunterschied besteht darin, dass ein DoS-Angriff von einem einzigen Standort ausgeht, während ein DDoS-Angriff von mehreren dezentralen Standorten aus unter Verschleierung seines Ursprungs erfolgt1.
 
-### Drei verschiedene Arten von DDoS-Angriffen:
-1. **Protokollangriffe:** Diese Art von Angriffen zielt darauf ab, Serverressourcen zu erschöpfen oder Netzwerkkomponenten wie Load-Balancer zu überlasten2.
-2. **Volumetrische Angriffe:** Diese Angriffe zielen darauf ab, die Bandbreite eines Netzwerks zu überlasten, indem sie es mit sinnlosen Daten (Junk-Daten) überfluten2.
-3. **Anwendungsschichtangriffe:** Diese Angriffe zielen auf Webserver-Anwendungen ab und versuchen, sie durch das Senden von scheinbar unschuldigen, aber tatsächlich schädlichen Anfragen zu überlasten2.
-### Abwehrstrategien gegen DDoS-Angriffe:
-1. **Firewall-Konfigurationen:** Eine gut konfigurierte Firewall kann helfen, böswilligen Datenverkehr zu blockieren und so einen DDoS-Angriff abzuwehren3.
-2. **Traffic-Filtering-Technologien:** Diese Technologien können dazu beitragen, den Datenverkehr zu analysieren und schädlichen Datenverkehr zu identifizieren und zu blockieren3.
-3. **Lastenausgleich:** Lastenausgleichssysteme können dazu beitragen, den Datenverkehr gleichmäßig auf mehrere Server zu verteilen, wodurch Ihr Netzwerk widerstandsfähiger gegen DDoS-Angriffe wird4.
-4. **Regelmäßige Aktualisierungen:** Durch regelmäßige Aktualisierungen Ihrer Systeme und Sicherheitsmaßnahmen können Sie die Wahrscheinlichkeit eines erfolgreichen Angriffs erheblich reduzieren5.
+### Dos und DDoS
+
+#### Unterschied zwischen DoS und DDoS
+
+Ein **Denial of Service** (DoS)-Angriff ist ein Angriff von einem (einzelnen) System auf ein anderes System, während bei einem **Distributed Denial of Service** (DDoS)-Angriff mehrere Systeme ein einzelnes System angreifen. Der Hauptunterschied ist, dass ein DoS-Angriff von einem Standort ausgeht und ein DDoS-Angriff von mehreren (dezentralen) Standorten, meist mit Verschleierung des Ursprungs, erfolgt.
+
+#### Drei verschiedene Arten von DDoS-Angriffen
+
+1. **Protokollangriffe** erschöpfen Serverressourcen oder überlasten Netzwerkkomponenten wie Load-Balancer.
+
+2. **Volumetrische Angriffe** zielen darauf ab, die Bandbreite eines Netzwerks zu überlasten, indem es mit Junk-Daten überflutet wird.
+
+3. **Anwendungsschichtangriffe** greifen Webserver-Anwendungen ab und versuchen diese durch das Senden von scheinbar unschuldigen Anfragen zu überlasten.
+
+#### Abwehrstrategien gegen DDoS-Angriffe
+
+1. **Security Patches**
+2. **Firewall-Konfigurationen**
+3. **Traffic-Filtering-Technologien** wie Intrusion Prevention Systems (IPS) und Intrusion Detection Systems (IDS).
+4. **Lastenausgleich** – Datenverkehr auf mehrere Server verteilen.
 
 ## Integrität
- 
-**Definition von Integrität:** Integrität bezeichnet die Eigenschaft eines Menschen, ehrlich, aufrichtig und authentisch zu handeln. Eine Person mit hoher Integrität handelt nach moralischen und ethischen Grundsätzen und bleibt auch in schwierigen Situationen ihren Überzeugungen und Werten treu12.
 
-### Reale Beispiele für Integrität:
-  1. **Arbeitsplatz:** Eine Person mit Integrität gibt die Ideen von Mitarbeitern nicht als eigene aus und stellt sich vor Mitarbeiterinnen und Mitarbeiter, die gemobbt werden3.
-  2. **E-Mails:** Eine Person mit Integrität würde nicht auf die Idee kommen, hinter dem Rücken zu lästern oder jemandem ins Gesicht zu lügen und etwas anderes zu sagen, als sie meinen4.
-  3. **Gespräche:** Eine Person mit Integrität handelt so, dass sich ihre Prinzipien, persönlichen Überzeugungen und moralischen Wertmaßstäbe in ihrem Verhalten widerspiegeln1.
+### Definition von Integrität
 
-**Hashing-Verfahren:** Hashing ist ein Verfahren, bei dem mithilfe einer Hash-Funktion eine eindeutige Zeichenkette generiert wird. Diese Zeichenkette, auch Hash-Wert genannt, dient als eindeutiger Identifikator für einen bestimmten Datensatz5. Einige der bekanntesten und häufig verwendeten Hashing-Algorithmen sind MD5, SHA-1, SHA-256 und SHA-35.  
-**Digitale Signaturen:** Eine digitale Signatur ist eine elektronische Unterschrift, bei der ein digitales Zertifikat hinterlegt ist. Digitale Signaturen entsprechen internationalen Vorgaben und bieten ein Höchstmaß an Zuverlässigkeit bei der Authentifizierung von Unterzeichnenden und digitalen Dokumenten6.  
-**Anwendungen für Hashing-Verfahren und digitale Signaturen:** Datenorganisation: Hashing-Algorithmen werden häufig eingesetzt, um Daten effizient zu speichern, zu überprüfen und zu sichern5.  
-**Sicherheitstechnik:** Durch die Verwendung von Hash-Funktionen können digitale Signaturen erzeugt werden, die die Integrität und Authentizität von digitalen Dokumenten gewährleisten5.  
-**Kryptowährungen:** SHA-256, ein Hashing-Algorithmus, wird häufig in Kryptowährungen und digitalen Signaturen verwendet5.
+Integrität bezeichnet die Eigenschaft eines Menschen, ehrlich, aufrichtig und authentisch zu handeln. Eine Person mit hoher Integrität handelt nach moralischen und ethischen Grundsätzen und bleibt auch in schwierigen Situationen ihren Überzeugungen und Werten treu.
+
+### Reale Beispiele für Integrität
+
+- Eine Person mit Integrität gibt die Ideen von anderen nicht als eigene aus und setzt sich für Mitmenschen ein.
+- Eine Person mit Integrität würde nicht, hinter dem Rücken eines anderen zu lästern oder jemandem anzulügen.
+
+### Wie Integrität in der IT angewendet wird
+
+1. **Hashing-Verfahren**
+    - Hashing beinhaltet die Generierung einer eindeutigen Zeichenkette, genannt Hash-Wert, die als eindeutiger Identifikator für einen bestimmten Datensatz dient.
+    - Gängige Hashing-Algorithmen: MD5, SHA-1, SHA-256 und SHA-3
+2. **Digitale Signaturen**
+    - Digitale Signaturen, unterstützt durch digitale Zertifikate, entsprechen internationalen Standards und bieten ein hohes Mass an Zuverlässigkeit und Sicherheit.
+3. **Sicherheitsmassnahmen**
+    - Man nutzt Hash-Funktionen um digitale Signaturen zu generieren und diese gewährleisten die Integrität von Daten.
+4. **Kryptowährungen**
+    - SHA-256, wird häufig bei der Signatur von Kryptowährungen und Transaktionen verwendet.
 
 ## Nicht-abstreitbarkeit
 
-**Definition von Nicht-Abstreitbarkeit:** Nicht-Abstreitbarkeit (engl. non-repudiation) bezieht sich auf die Nachweisbarkeit gegenüber Dritten. Das Ziel ist es, sicherzustellen, dass der Versand und Empfang von Daten und Informationen nicht in Abrede gestellt werden kann12. Es wird unterschieden zwischen der Nichtabstreitbarkeit der Herkunft (die Absenderin/der Absender soll das Versenden einer Nachricht nachträglich nicht bestreiten können) und der Nichtabstreitbarkeit des Erhalts (die Empfängerin/der Empfänger soll den Erhalt einer Nachricht nachträglich nicht bestreiten können)1.
+### Definition von Nicht-Abstreitbarkeit
 
-**Beispiele von Situationen, in denen Nicht-Abstreitbarkeit eine Schlüsselrolle spielt:**
-  1. E-Mail-Kommunikation: In der E-Mail-Kommunikation ist die Nicht-Abstreitbarkeit wichtig, um sicherzustellen, dass der Sender einer E-Mail das Senden der E-Mail nicht abstreiten kann und der Empfänger den Erhalt der E-Mail nicht abstreiten kann1.
-  2. Online-Transaktionen: Bei Online-Transaktionen, insbesondere bei Finanztransaktionen, ist die Nicht-Abstreitbarkeit entscheidend, um sicherzustellen, dass eine durchgeführte Transaktion nicht abgestritten werden kann2.
-  3. Digitale Signaturen: Digitale Signaturen bieten Nicht-Abstreitbarkeit, indem sie sicherstellen, dass eine signierte Nachricht nicht abgestritten werden kann2.
+Nicht-Abstreitbarkeit bezieht sich auf die Nachweisbarkeit gegenüber Dritten und stellt sicher, dass eine Partei einer Transaktion diese nicht abstreiten kann.
 
-- [Quelle](https://datenschutz.ch/lexika/informationssicherheit-glossar/nichtabstreitbarkeit)
- 
+### Beispiele von Situationen, in denen Nicht-Abstreitbarkeit eine Schlüsselrolle spielt
+
+1. Bankwesen: Im Bankwesen ist die Nicht-Abstreitbarkeit wichtig, um sicherzustellen, dass Transaktionen authentisch sind und nicht abgestritten werden können.
+
+2. E-Commerce: Im E-Commerce ist die Nicht-Abstreitbarkeit wichtig, um sicherzustellen, dass Transaktionen zwischen Käufer und Verkäufer authentisch sind und nicht abgestritten werden können.
+
 ## Schwachstellen aus dem Unterricht
+
 ### Sniffing
+
 - «Schnüffeln» von Daten im Netzwerk
 - Daten
 - Zugangsdaten
 - Zertifikate
 - Etc.
 - Gegenmassnamen
-    - Verschlüsseln  - NAC (Network Access Control)
+  - Verschlüsseln  - NAC (Network Access Control)
+
 ### Spoofing
+
 - Verschleiern der eigenen Identität oder Vortäuschung einer anderen Identität
 - Arten von Spoofing
-    - IP, E-Mail, DNS, ARP, URL, GPS, CallerID, etc.
+  - IP, E-Mail, DNS, ARP, URL, GPS, CallerID, etc.
 - Gegenmassnahmen
-    - «gesundes» Misstrauen
-    - Signieren
+  - «gesundes» Misstrauen
+  - Signieren
+
 ## Man-in-the-Middle
+
 - Angreifer positioniert sich logisch oder physisch zwischen Opfer und Ressource
 - Informationen abfangen
 - Mitlesen
 - Manipulieren
 - Gegenmassnahme
-    - Ende-zu-Ende Verschlüsselung
+  - Ende-zu-Ende Verschlüsselung
+
 ## Reconnaissance / DDoS
+
 - Reconnaissance (Aufklärung)
-    - IP + Port Scans
-    - DNS Scans
-    - Social Media
+  - IP + Port Scans
+  - DNS Scans
+  - Social Media
 - DDoS (nicht DoS)
-    - Überlastung eines Ziels mit max. Requests / Bandbreite
+  - Überlastung eines Ziels mit max. Requests / Bandbreite
 - Gegenmassnahmen
-    - Firewalling
-    - Header Informationen minimieren
+  - Firewalling
+  - Header Informationen minimieren
+
 ## Hijacking
+
 - Hijacking (Übernehmen)
-    - Sessions
-    - Domains
-    - Content
-    - Malware / RAT
+  - Sessions
+  - Domains
+  - Content
+  - Malware / RAT
 - Gegenmassnahmen
-    - Zertifikate
-    - Starkes Session Handling
-    - Prozesse
-    - Etc.
+  - Zertifikate
+  - Starkes Session Handling
+  - Prozesse
+  - Etc.
+
 ## Phishing
-- Diebstall von Informationen durch gefälschte E-Mails, Webseiten, SMS, etc.
+
+- Diebstahl von Informationen durch gefälschte E-Mails, Webseiten, SMS, etc.
 - Gegenmassnahmen
-    - «gesundes» Misstrauen
-    - Zertifikate
-    - Awareness
+  - «gesundes» Misstrauen
+  - Zertifikate
+  - Awareness
+
 ## Exploits
+
 - Ausnutzung von Schwachstellen in Software und Systemen um die Schutzziele zu verletzen
 - Arten
-   - RCE, LFI, RFI, DoS, Injections, etc.
+  - RCE, LFI, RFI, DoS, Injections, etc.
 - Gegenmassnahmen
-    - Safe Coding
-    - Patchen
-    - IDS, IPS, WAF, etc.
+  - Safe Coding
+  - Patchen
+  - IDS, IPS, WAF, etc.
+
 ## Sites & Writeups
-- Hack the Box Writeup
-- TryHackMe Writeup
-- VulnHub Writeup
-- Bug Bounty Writeup (Beispiel)
+
+- Hack the Box
+- TryHackMe
+- VulnHub
+- Bug Bounties
+
 ## OSINT
+
 - Was ist OSINT?
-- Open Source Itelligence
-- Methodologie um Informationen zu…
-    - erhalten
-    - analysieren
-    - korrelieren
+- Open Source Intelligence
+- Methodologie um Informationen zu...
+  - erhalten
+  - analysieren
+  - korrelieren
 - per-se öffentliche Informationen
-## SQL Injection im Detail
-- Query Sprache für relationale Datenbanken
+
+## SQL Injection
+
 - Prozedur
-    - Applikation macht SQL Abfrage um DB Informationen abzufragen
-    - DB gibt das Resultat der Applikation zurück und zeigt es an
+  - Applikation macht SQL Abfrage um DB Informationen abzufragen
+  - DB gibt das Resultat der Applikation zurück und zeigt es an
+
 - Befehle
-    - Select
-    - Insert
-    - Update
-    - Delete
-    - Ausführung von Stored Procedures
+  - Select
+  - Insert
+  - Update
+  - Delete
+  - Ausführung von Stored Procedures
+
+- Schutzmöglichkeiten
+  - Zugriff auf Applikation / Service
+  - Input Validation für User Front-End
+  - Limitieren von User Zugriffen
+- [SQL Injection Cheat Sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
+
+### Bypassing
+
 - Bypass
-    - ' or '1'='1
-    - Reverse DNS
-    - ‘; exec master..xp_cmdshell ‘nslookup domain.ch’
-    - Reverse Ping
-    - ‘; exec master..xp_cmdshell ‘ping x.x.x.x’
-- Schutzmöglichkeiten 
-    - Zugriff auf Applikation / Service
-    - Input Validation für User Front-End
-    - Limitieren von User Zugriffen
-- SQL Injection Cheat Sheet
-    - https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+  - `' or '1'='1`
+- Reverse DNS
+  - `‘; exec master..xp_cmdshell ‘nslookup domain.ch’`
+- Reverse Ping
+  - `‘; exec master..xp_cmdshell ‘ping x.x.x.x’`
 
-## Unterschied DoS und DDoS
- 
-1. **Denial of Service (DoS)**
-  - Probleme: Ein Angreifer kann den normalen Betrieb eines Geräts unterbrechen, indem er es mit Anfragen überlastet.
-  - Folgen: Dies kann dazu führen, dass das Gerät für seine beabsichtigten Benutzer unzugänglich wird.
-  - Behebung: Implementierung von Rate-Limiting, Intrusion-Detection-Systemen und Firewalls.
-2. **Distributed Denial of Service (DDoS)**
-  - Probleme: Mehrere Systeme greifen ein einzelnes System an, was zu einer Überlastung führt.
-  - Folgen: Dies kann dazu führen, dass das Zielgerät für seine beabsichtigten Benutzer unzugänglich wird.
-  - Behebung: Implementierung von DDoS-Minderungsmaßnahmen wie Blackholing und sinkholing, Anycast-Netzwerken und Intrusion-Prevention-Systemen.
+## CVE & CVSS Scoring System
 
-Und hier ist der Unterschied zwischen DoS und DDoS:
-  - **Erkennung/Abmilderung:** Ein DoS-Angriff stammt von einem einzigen Standort, was die Erkennung und Abmilderung erleichtert. Ein DDoS-Angriff hingegen stammt von mehreren Standorten, was die Erkennung und Abmilderung erschwert.
-  - **Angriffsgeschwindigkeit und Datenverkehrsvolumen:** Ein DDoS-Angriff kann schneller ausgeführt werden und größere Datenmengen senden, da er von mehreren Standorten aus erfolgt.
-  - **Ausführungsart und Rückverfolgung der Quelle(n):** Ein DDoS-Angriff verwendet ein Botnet, was die Rückverfolgung des tatsächlichen Ursprungs komplizierter macht als bei einem DoS-Angriff, der in der Regel von einem einzigen Rechner aus ausgeführt wird.
+### Common Vulnerabilities and Exposures (CVE)
 
-- [Quelle](https://www.fortinet.com/de/resources/cyberglossary/dos-vs-ddos)
+Das CVE (Common Vulnerabilities and Exposures) System ist eine Struktur zur Identifizierung und Standardisierung von Namen für Schwachstellen in Software und Hardware.
 
-## CVE bzw. CVSS Scoring System
+CVE-Einträge sind knapp und enthalten keine technischen Daten oder Informationen zu Risiken, Auswirkungen und Lösungen. Sie dienen dazu, eindeutige Schwachstellen zu erkennen und die Entwicklung von Sicherheitswerkzeugen und -lösungen zu koordinieren.
 
-1. **Common Vulnerabilities and Exposures (CVE)**
-  - Probleme: Es gibt viele verschiedene Sicherheitsschwachstellen, die in verschiedenen Systemen und Anwendungen existieren können.
-  - Folgen: Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
-  - Behebung: Das CVE-System bietet eine standardisierte Methode zur Identifizierung und Katalogisierung von öffentlich bekannten Sicherheitsschwachstellen123.
-  - [Quelle](https://www.redhat.com/en/topics/security/what-is-cve)
+### Common Vulnerability Scoring System (CVSS)
 
-2. **Common Vulnerability Scoring System (CVSS)**
-  - Probleme: Es ist schwierig, die Schwere von Sicherheitsschwachstellen auf eine Weise zu bewerten, die konsistent und wiederholbar ist.
-  - Folgen: Ohne eine standardisierte Bewertungsmethode kann es schwierig sein, zu entscheiden, welche Schwachstellen zuerst behoben werden sollten.
-  - Behebung: Das CVSS bietet eine Methode zur Bewertung der Schwere von Sicherheitsschwachstellen. Es generiert eine Punktzahl von 0 bis 10 basierend auf der Schwere der Schwachstelle. CVSS-Werte wurden auch in die Ranglisten “Kritisch”, “Hoch”, “Mittel” und “Niedrig” gruppiert456.
-  - [Quelle](https://www.sans.org/blog/what-is-cvss/)
- 
-Und hier ist der Unterschied zwischen CVE und CVSS:
- 
-- **CVE** ist ein System, das dazu dient, Sicherheitsschwachstellen zu identifizieren und zu katalogisieren. Jede Schwachstelle erhält eine eindeutige CVE-ID, die zur Identifizierung der spezifischen Schwachstelle verwendet wird123.
-- **CVSS** hingegen ist ein System, das dazu dient, die Schwere von Sicherheitsschwachstellen zu bewerten. Es generiert eine Punktzahl von 0 bis 10, die auf der Schwere der Schwachstelle basiert. Diese Punktzahl kann dann verwendet werden, um zu entscheiden, welche Schwachstellen zuerst behoben werden sollten
+Das Common Vulnerability Scoring System (CVSS) ist ein Satz offener Standards zur Bewertung von Sicherheitslücken, indem diesen eine Zahl zugewiesen wird, um ihre Schwere zu beurteilen. Die Bewertungen reichen von 0,0 bis 10,0, wobei höhere Zahlen auf eine grössere Schwere der Sicherheitslücke hinweisen.
 
-## OWASP 
+### Unterschied zwischen CVE und CVSS
 
-1. **Open Web Application Security Project (OWASP)**
-  - Probleme: Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen und Anwendungen existieren können.
-  - Folgen: Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
-  - Behebung: OWASP ist eine Non-Profit-Organisation, die zum Ziel hat, für mehr Sicherheit in Anwendungen und Diensten des World Wide Webs zu sorgen12. Sie bietet eine standardisierte Methode zur Identifizierung und Katalogisierung von öffentlich bekannten Sicherheitsschwachstellen12.
+- CVE ist ein System zur Identifizierung und Standardisierung von Namen für Schwachstellen in Software und Hardware.
 
-Ziel und Zweck von OWASP:
- 
-- Ziel: OWASP hat das Ziel, die Sicherheit von Webanwendungen zu verbessern12. Sie weist auf Risiken für Webanwendungen hin und schafft dadurch Transparenz für Endanwender oder Organisationen hinsichtlich Websecurity1.
-- Zweck: OWASP stellt Informationen, Dokumentationen, Tools und Lösungen bereit1. Sie unterstützt Entwickler, Entscheider, QA-Spezialisten und Penetrationstester1. Eine bekannte Veröffentlichung ist die jährlich zusammengestellte Top 10 Liste der häufigsten Angriffe und größten Risiken im Bereich Webapplikationen
+- CVSS ist ein Satz offener Standards zur Bewertung von Sicherheitslücken, indem diesen eine Zahl zugewiesen wird, um ihre Schwere zu beurteilen.
 
-- [Quelle](https://www.security-insider.de/was-ist-owasp-a-741869/)
+## OWASP
+
+### **Open Web Application Security Project (OWASP)**
+
+- **Probleme:** Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen und Anwendungen existieren können.
+
+- **Folgen:** Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
+
+- **Behebung:** **OWASP**. Eine Non-Profit-Organisation, die zum Ziel hat, für mehr Sicherheit in Anwendungen und Diensten des World Wide Webs zu sorgen. Sie bietet eine standardisierte Methode zur Identifizierung und Katalogisierung von öffentlich bekannten Sicherheitsschwachstellen.
+
+### Ziel und Zweck
+
+OWASP hat das Ziel, die Sicherheit von Webanwendungen zu verbessern, indem sie auf Risiken für Webanwendungen hin weisen und Transparenz für Endanwender oder Organisationen hinsichtlich Websecurity schaffen.
+
+OWASP stellt Informationen, Dokumentationen, Tools und Lösungen bereit. Sie unterstützt Entwickler, Entscheider, QA-Spezialisten und Penetrationstester. Eine bekannte Veröffentlichung ist die jährlich zusammengestellte Top-10-Liste der häufigsten Angriffe und grössten Risiken im Bereich Webapplikationen.
 
 ## Kali Linux
 
-1. **Kali Linux**
-  - Probleme: Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen und Anwendungen existieren können.
-  - Folgen: Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
-  - Behebung: Kali Linux ist ein kostenloses, quelloffenes Betriebssystem, das für fortgeschrittene Penetrationstests und Sicherheitsprüfungen verwendet wird12. Es ist für ethische Hacker und Sicherheitsexperten entwickelt worden, die ihre Systeme auf Schwachstellen testen müssen12.
-2. **Pentesting Framework**
-  - Probleme: Es ist schwierig, die Schwere von Sicherheitsschwachstellen auf eine Weise zu bewerten, die konsistent und wiederholbar ist.
-  - Folgen: Ohne eine standardisierte Bewertungsmethode kann es schwierig sein, zu entscheiden, welche Schwachstellen zuerst behoben werden sollten.
-  - Behebung: Ein Pentest-Framework, oder Penetration Testing Framework, ist ein standardisierter Satz von Richtlinien und vorgeschlagenen Tools zur Strukturierung und Durchführung effektiver Pentests34.
-3. **Security Analyse Framework**
-  - Probleme: Es ist schwierig, die Schwere von Sicherheitsschwachstellen auf eine Weise zu bewerten, die konsistent und wiederholbar ist.
-  - Folgen: Ohne eine standardisierte Bewertungsmethode kann es schwierig sein, zu entscheiden, welche Schwachstellen zuerst behoben werden sollten.
-  - Behebung: Ein Sicherheitsframework definiert Richtlinien und Verfahren zur Einrichtung und Aufrechterhaltung von Sicherheitskontrollen56. Frameworks klären Prozesse, die zum Schutz einer Organisation vor Cybersicherheitsrisiken verwendet werden. Sie helfen IT-Sicherheitsprofis und Sicherheitsteams, ihre Organisationen konform und vor Cyberbedrohungen geschützt zu halten
+- **Probleme:** Sicherheitslücken, in verschiedenen Systemen und Anwendungen
 
-## 24 Deadly sins
+- **Folgen:** Ohne Methode zur Identifizierung von Schwachstellen wird es schwierig diese zu verwalten und zu beheben.
 
-1. **24 Deadly Sins of Software Development**
-  - Probleme: Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen und Anwendungen existieren können.
-  - Folgen: Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
-  - Behebung: “24 Deadly Sins of Software Security” ist ein Buch, das die häufigsten Design- und Programmierfehler aufzeigt und erklärt, wie man sie beheben oder besser noch, von Anfang an vermeiden kann123.
-  - [Link zum Buch](https://www.amazon.com/Deadly-Sins-Software-Security-Programming/dp/0071626751)
-2. **Exception/Error Handling**
-  - Probleme: Unerwartete oder fehlerhafte Situationen können während der Programmausführung auftreten.
-  - Folgen: Ohne eine effektive Methode zur Behandlung dieser Ausnahmen kann es zu Programmabstürzen oder unerwünschtem Verhalten kommen.
-  - Behebung: Exception Handling ist ein kritischer Aspekt der Programmierung, der Entwicklern ermöglicht, unerwartete oder fehlerhafte Situationen elegant zu verwalten4567.
-3. **Weak Random Numbers**
-  - Probleme: Die Erzeugung von Zufallszahlen auf Computern ist eine Herausforderung, da Computer deterministische Maschinen sind.
-  - Folgen: Schwache Zufallszahlen können die Sicherheit von Systemen beeinträchtigen, insbesondere wenn sie für kryptographische Zwecke verwendet werden.
-  - Behebung: Es wird empfohlen, kryptographisch sichere Pseudozufallszahlengeneratoren (CSPRNGs) anstelle von schwachen PRNGs zu verwenden
+- **Behebung:** Kali Linux ist ein kostenloses, open-source Betriebssystem, das für fortgeschrittene Penetrationstests und Sicherheitsprüfungen verwendet werden kann. Es ist für white Hacker und Sicherheitsexperten entwickelt worden, die Systeme auf Schwachstellen testen.
+
+## Pentesting Framework
+
+- **Probleme:** Wenn Schwachstellen nicht wiederholbar überprüft werden können, ist es schwierig zu überprüfen, ob sie behoben wurden.
+
+- **Folgen:** Ohne Methode zur Überprüfung von Schwachstellen kann es schwierig sein, zu entscheiden, ob sie behoben wurden.
+
+- **Behebung:** Ein Penetration Testing, kurz Pentest-Framework, ist ein standardisierter Satz von Richtlinien und vorgeschlagenen Tools zur Strukturierung und Durchführung effektiver Pentests.
+
+## Security Analyse Framework
+
+- **Probleme:** Schwachstellen, die nicht wiederholbar überprüft werden können, können nicht anständig bewertet werden.
+
+- **Folgen:** Schwachstellen können nicht priorisiert werden.
+
+- **Behebung:** Sicherheitsframeworks definieren Richtlinien und Verfahren, welche Sicherheitskontrollen erleichtern.
+
+## 24 Deadly Sins of Software Development
+
+- **Probleme:** Viele Programmierfehler und Designfehler durch unerfahrene Entwickler.
+
+- **Folgen:** Eine Vielzahl von Sicherheitslücken und Schwachstellen in Software und schwer lesbarer und wartbarer Code.
+
+- **Behebung:** ["24 Deadly Sins of Software Security"](https://www.amazon.com/Deadly-Sins-Software-Security-Programming/dp/0071626751) ist ein Buch, das die häufigsten Design- und Programmierfehler aufzeigt und erklärt, wie man sie beheben oder von Anfang an vermeiden kann.
+
+## **Exception/Error Handling**
+
+- **Probleme:** Unerwartete oder fehlerhafte Situationen können während der Programmausführung auftreten.
+
+- **Folgen:** Ohne eine effektive Methode zur Behandlung dieser Ausnahmen kann es zu Programmabstürzen oder unerwünschtem Verhalten kommen.
+
+- **Behebung:** Exception Handling ist ein kritischer Aspekt der Programmierung, der Entwicklern ermöglicht, unerwartete oder fehlerhafte Situationen elegant zu verwalten.
+
+## **Weak Random Numbers**
+
+- **Probleme:** Schlechte Zufallszahlen bergen das Risiko, dass man ihren Seed ausrechnen kann.
+
+- **Folgen:** Ist der Seed bekannt, so sind die Zufallszahlen nicht mehr zufällig und alle Operationen, die auf ihnen basieren, sind nicht mehr sicher.
+
+- **Behebung:** Kryptographische Pseudozufallszahlengeneratoren (CSPRNGs) anstelle von schwachen PRNGs verwenden.
 
 ## Entdecken von Lücken
-1. **Fuzz-Testing**
-  - Probleme: Software kann unerwartete oder ungültige Eingaben enthalten, die zu Fehlern oder Sicherheitslücken führen können.
-  - Folgen: Ohne eine effektive Methode zur Behandlung dieser Eingaben kann es zu Programmabstürzen oder unerwünschtem Verhalten kommen.
-  - Behebung: Fuzz-Testing ist eine automatisierte Software-Testmethode, die ungültige, fehlerhafte oder unerwartete Eingaben in ein System einfügt, um Softwarefehler und Schwachstellen aufzudecken123.
-  - [Quelle](https://www.synopsys.com/glossary/what-is-fuzz-testing.html)
-2. **Security Scanner**
-  - Probleme: Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen und Anwendungen existieren können.
-  - Folgen: Ohne eine standardisierte Methode zur Identifizierung dieser Schwachstellen kann es schwierig sein, sie effektiv zu verwalten und zu beheben.
-  - Behebung: Ein Sicherheitsscanner ist ein automatisiertes Sicherheitstestwerkzeug, das nach Fehlkonfigurationen oder Programmierfehlern sucht, die Cybersicherheitsbedrohungen darstellen. Sicherheitsscanner stützen sich entweder auf eine Datenbank mit bekannten Schwachstellen oder suchen nach gängigen Fehlerarten, um unbekannte Schwachstellen zu entdecken456.
-  - [Quelle](https://snyk.io/de/learn/vulnerability-scanner/)
-3. **Code Review Basics**
-  - Probleme: Unerwartete oder fehlerhafte Situationen können während der Programmausführung auftreten.
-  - Folgen: Ohne eine effektive Methode zur Behandlung dieser Ausnahmen kann es zu Programmabstürzen oder unerwünschtem Verhalten kommen.
-  - Behebung: Code-Review ist ein Prozess zur Sicherstellung, dass Fehler und Fehler erkannt und behoben werden, bevor sie die Produktion erreichen. Dies erfordert sehr oft die Beteiligung von Entwicklern, die nicht direkt an der Implementierung des jeweiligen Codeabschnitts beteiligt sind.
-  - [Quelle](https://www.freecodecamp.org/news/code-review-the-ultimate-guide-aa45c358bbf5/)
+
+### **Fuzz-Testing**
+
+- **Probleme:** Software kann unerwartete oder ungültige Eingaben enthalten, die zu Fehlern oder Sicherheitslücken führen können.
+
+- **Folgen:** Ohne eine Methode zur Behandlung dieser Eingaben kann es zu Programmabstürzen oder unerwünschtem Verhalten kommen.
+
+- **Behebung:** Fuzz-Testing ist eine automatisierte Software-Testmethode, die ungültige, fehlerhafte oder unerwartete Eingaben in ein System einfügt, um Softwarefehler und bewusst Schwachstellen aufzudecken.
+
+### **Security Scanner**
+
+- **Probleme:** Es gibt viele verschiedene Sicherheitslücken, die in verschiedenen Systemen, Frameworks, Libraries usw. existieren.
+
+- **Folgen:** Viele dieser Schwachstellen können unbemerkt bleiben und zu Sicherheitsproblemen führen.
+
+- **Behebung:** Ein Sicherheitsscanner ist ein automatisiertes Sicherheitstestwerkzeug, das nach Fehlkonfigurationen oder Programmierfehlern sucht, welche Bedrohungen ausnutzen können.
+  - Sicherheitsscanner stützen sich entweder auf eine Datenbank mit bekannten Schwachstellen oder suchen nach gängigen Fehlerarten, um unbekannte Schwachstellen zu entdecken.
+
+### **Code Review Basics**
+
+- **Probleme:** Unterschiedliche Codierungsstile und -praktiken unkontrolliert auftreten, was die Wartbarkeit des Codes erschwert oder allgemeine Coding-Anforderungen nicht erfüllt.
+
+- **Folgen:** Die Qualität des Codes sinkt, was zu Fehlern, unerwartetem Verhalten und erschwerten Wartungsarbeiten in der Software führt.
+
+- **Behebung:** Code-Reviews einzuführen. Klare Richtlinien für Codierungsstandards und kontinuierliche Überprüfungen durch Reviewer einführen.
 
 ## Penetration Testing
- 
-- Was ist es: Penetration Testing, kurz Pentest, ist ein umfassender Sicherheitstest einzelner Rechner oder Netzwerke jeglicher Größe. Ein Penetrationstest prüft die Sicherheit von Systembestandteilen und Anwendungen eines Netzwerks oder Softwaresystems mit Mitteln und Methoden, die tauglich sind, um unautorisiert in das System einzudringen (Penetration). Penetrationstests können Sicherheitslücken aufdecken, aber nicht ausschließen12.
-- Welche Regeln sind zu beachten: Die Art der Sicherheitstests orientiert sich am Gefahrenpotential eines gefährdeten Systems, Netzwerks oder einer Anwendung. Entsprechend zahlreich sind die Hilfswerkzeuge für Penetrationstests und entsprechend sollten derart umfassende Sicherheitstests lediglich erfahrene Sicherheitsforscher oder Systemadministratoren durchführen, die wissen, was sie machen, welche Ereignisse sie damit verursachen und welche Ergebnisse sie damit erzielen möchten1.
-- Es ist wichtig zu beachten, dass das unautorisierte Eindringen in fremde Computersysteme, das Stören der Funktionsfähigkeit von Computern und das Manipulieren von Daten, nach §§ 202c, 303a sowie 303b StGB eine Straftat ist. Daher muss die Art und der Umfang der Hacking-Tätigkeit vom Auftraggeber abgesegnet sein, um sich hier nicht strafbar zu machen3.
-- [Quelle](https://de.wikipedia.org/wiki/Penetrationstest_%28Informatik%29)
+
+Penetration Testing, kurz Pentest, ist ein Sicherheitstest einzelner Rechner oder Netzwerke jeglicher Grösse.
+
+Ein Penetrationstest prüft die Sicherheit von Systembestandteilen, Anwendungen oder Netzwerke, indem er versucht, wie eine unautorisierte Person in das System einzudringen. Penetrationstests decken Sicherheitslücken auf, aber schliessen sie nicht aus.
+
+### Regeln für Penetration Testing
+
+1. **Zustimmung einholen:** Sicherstellen, die ausdrückliche (schriftliche) Zustimmung des Eigentümers des zu testenden Systems zu haben.
+
+2. **Verantwortungsvolles Verhalten:** Penetrationstest verantwortungsbewusst durchführen
+    - Jegliche Handlungen, die das getestete System oder andere Benutzer gefährden könnten vermeiden.
+    - Strikt an die definierten Testbereiche halten.
+
+3. **Dokumentation:** Alle Schritte und Ergebnisse des Penetrationstests dokumentieren, um die Ergebnisse zu analysieren und Massnahmen zur Behebung von Schwachstellen zu ergreifen.
+
+### Rechtliche Hinweise
+
+Unerlaubte Penetrationstests sind strafbar. Gemäss [Artikel 143](https://www.swissrights.ch/gesetz/Artikel-143-StGB-2020-DE.php) des Schweizerischen Strafgesetzbuches (StGB) ist das unbefugte Eindringen in ein Computersystem strafbar und kann mit Geldstrafen oder Freiheitsstrafe geahndet werden.
+
+**Immer die erforderliche Zustimmung einholen!**
 
 ## Web Application Firewall
 
-1. **Web Application Firewalls (WAF)**
-  - Was ist es: Eine Web Application Firewall (WAF) ist ein Verfahren, das Webanwendungen vor Angriffen über das Hypertext Transfer Protocol (HTTP) schützen soll. Sie stellt damit einen Spezialfall einer Application Layer Firewall (ALF) oder eines Application Layer Gateways (ALG) dar1. Eine WAF prüft und filtert den Verkehr zwischen den Webanwendungen und dem Internet und kann dazu beitragen, Webanwendungen gegen Angriffe wie z. B. Cross-Site Request Forgery (CSRF), Cross-Site-Scripting (XSS), File Inclusion und SQL-Injektion zu verteidigen2.
-  - Regeln: Eine WAF sitzt zwischen den Webanwendungen eines Unternehmens und den Anfragen aus dem Internet. Über Reverse Proxy überwacht, filtert oder blockiert sie Datenpakete, die von und zu einer Webanwendung unterwegs sind2.
-2. **ModSecurity 3**
-  - Was ist es: ModSecurity ist eine Open-Source, plattformübergreifende Web Application Firewall (WAF) Engine für Apache, IIS und Nginx3. Sie hat eine robuste ereignisbasierte Programmiersprache, die Schutz vor einer Reihe von Angriffen gegen Webanwendungen bietet und das Überwachen, Protokollieren und Echtzeitanalysieren von HTTP-Verkehr ermöglicht3.
-  - Regeln: ModSecurity bietet die Möglichkeit, proaktiv Richtlinien und Regeln festzulegen. Anwendungssicherheitsteams sind in der Lage zu überwachen, was eine WAF durchlassen darf und was nicht. Dadurch können Teams rechtzeitig über einen laufenden Angriff informiert werden, damit sie erheblich schneller auf potenzielle Sicherheitsvorfälle reagieren können2.
+### Was ist eine Web Application Firewall (WAF)?
 
-- [Quelle](https://de.wikipedia.org/wiki/Penetrationstest_%28Informatik%29)
+Eine Web Application Firewall (WAF) ist eine Sicherheitslösung, die den Datenverkehr zwischen einer Webanwendung und dem Internet überwacht und filtert. Sie dient zum Schutz vor bekannten Angriffsmustern wie [SQL-Injection](#sql-injection) oder Cross-Site-Scripting (XSS).
+
+### Regeln für WAF
+
+Die Regeln der WAF definieren, welche Arten von Anfragen erlaubt oder blockiert werden sollen, basierend auf vordefinierten Sicherheitsrichtlinien und Angriffssignaturen.
+
+## ModSecurity 3
+
+### Was ist ModSecurity?
+
+ModSecurity ist eine Open-Source, plattformübergreifende Web Application Firewall (WAF) Engine für Apache, IIS und Nginx. Sie hat eine ereignisbasierte Programmiersprache, die Schutz vor Angriffen gegen Webanwendungen bietet.
+
+Zusätzlich ermöglicht sie das Überwachen, Protokollieren und Echtzeit Analysieren von HTTP-Verkehr.
+
+### Regeln für ModSecurity 3
+
+Mit ModSecurity können proaktiv Richtlinien und Regeln festgelegt werden, um den HTTP-Verkehr zu überwachen und zu filtern. Dies ermöglicht es Sicherheitsteams, zu kontrollieren, welche Anfragen die WAF durchlassen darf und welche blockiert werden sollen.
+
+Durch diese Funktion können Teams rechtzeitig über potenzielle Angriffe informiert werden und schnell darauf reagieren.
+
+## Quellen
+
+- [Art. 143 StGB](https://www.swissrights.ch/gesetz/Artikel-143-StGB-2020-DE.php)
+- [Advanced Encryption Standard (AES)](https://studyflix.de/informatik/aes-verschlusselung-1611)
+- [RSA-Verfahren (Rivest–Shamir–Adleman)](https://studyflix.de/informatik/rsa-verschlusselung-1608)
+- [elliptischen Kurven](https://de.wikipedia.org/wiki/Elliptische_Kurve)
+- [SQL Injection Cheat Sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
+- [kryptowissen.de](https://www.kryptowissen.de/schutzziele.php)
+- [Vertraulichkeit](https://de.wikipedia.org/wiki/Vertraulichkeit)
+- [Dos vs DDos](https://www.fortinet.com/de/resources/cyberglossary/dos-vs-ddos)
+- [Nicht-Abstreitbarkeit](https://datenschutz.ch/lexika/informationssicherheit-glossar/nichtabstreitbarkeit)
+- [CVE](https://www.redhat.com/en/topics/security/what-is-cve)
+- [CVSS](https://www.sans.org/blog/what-is-cvss/)
+- [OWASP](https://www.security-insider.de/was-ist-owasp-a-741869/)
+- [Fuzz-testing](https://www.synopsys.com/glossary/what-is-fuzz-testing.html)
+- [Vulnerability-scanner](https://snyk.io/de/learn/vulnerability-scanner/)
+- [Code Review Guide](https://www.freecodecamp.org/news/code-review-the-ultimate-guide-aa45c358bbf5/)
+- [Penerationstest](https://de.wikipedia.org/wiki/Penetrationstest_%28Informatik%29)
+- [24 Deadly Sins of Software Security](https://www.amazon.com/Deadly-Sins-Software-Security-Programming/dp/0071626751)
