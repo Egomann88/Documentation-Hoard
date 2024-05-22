@@ -38,6 +38,7 @@ Personen, welche in ein fremdes, gegen unbefugten Zugriff geschütztes Datenvera
 ## Informationsquellen zu Schwachstellen
 
 - NCSC
+- Cybernews
 - GovCert
 - Medien (soziale Medien, Zeitungen)
 - CVE Details
